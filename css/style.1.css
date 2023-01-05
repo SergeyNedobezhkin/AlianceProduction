@@ -1,9 +1,6 @@
 * {
   box-sizing: border-box;
 }
-html {
-  width: 1920px;
-}
 
 @font-face {
   font-family: "Bebas Neue";
@@ -20,6 +17,7 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
+  padding: 0 8px;
 }
 
 .navbar {
@@ -54,7 +52,7 @@ body {
   background-image: url("../img/header-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom -56px;
+  background-position: center bottom -48px;
   position: relative;
 }
 
@@ -168,8 +166,8 @@ body {
   position: relative;
 }
 .header-features-item {
-  width: 288px;
-  padding: 28px 50px;
+  min-width: 288px;
+  padding: 27px 50px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
 .header-features-text {
@@ -193,7 +191,7 @@ body {
   line-height: 120%;
   font-style: normal;
   color: #292d33;
-  margin-top: 23px;
+  margin-top: 21px;
   margin-bottom: 53px;
 }
 
@@ -237,7 +235,7 @@ body {
   line-height: 160%;
   color: #828a99;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .steps-link {
   display: flex;
