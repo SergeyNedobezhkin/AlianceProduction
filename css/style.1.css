@@ -313,6 +313,9 @@ body {
   html {
     font-size: 9px;
   }
+  .navbar-light {
+    height: 6rem;
+  }
   .header-nav {
     display: none;
   }
@@ -434,7 +437,9 @@ body {
   html {
     font-size: 5px;
   }
-
+  .navbar-light {
+    height: 6rem;
+  }
   .navbar-button {
     padding-left: 2rem;
     padding-right: 2rem;
