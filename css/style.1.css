@@ -481,12 +481,12 @@ body {
     height: 6.75rem;
   }
   .navbar-light .mobile-menu-toggle {
-    width: 13rem;
+    width: 9rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 2.5rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .mobile-menu-toggle {
@@ -501,14 +501,14 @@ body {
 
   .close-menu .mobile-menu-line:nth-child(1) {
     transform: rotate(45deg) translateY(16px);
-    margin-left: 25px;
-    margin-top: 8px;
+    margin-left: 14px;
+    margin-top: 0px;
     max-width: 24px;
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-16px);
-    margin-left: 24.5px;
-    margin-bottom: 8px;
+    margin-left: 13.5px;
+    margin-bottom: -7px;
     max-width: 24px;
   }
   .navbar-light .logo-svg {
@@ -525,12 +525,6 @@ body {
   .navbar-button .button-icon {
     height: 24px;
     width: 24px;
-  }
-  .close-menu .mobile-menu-line:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-  }
-  .close-menu .mobile-menu-line:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
   }
   .mobile-menu.is-open {
     padding-top: 72px;
