@@ -162,6 +162,7 @@ body {
   line-height: 160%;
   margin-top: 2.5rem;
   margin-bottom: 3.125rem;
+  height: 100%;
 }
 .header-features {
   display: flex;
@@ -175,16 +176,14 @@ body {
 }
 .header-features-item {
   padding: 1.75rem 3.125rem;
-  min-height: 100%;
+  height: auto;
   width: 18rem;
   border: 1px solid rgba(235, 235, 240, 0.2);
-}
-.swiper {
-  max-height: 300px;
 }
 .swiper-wrapper {
   margin-bottom: 0px;
 }
+
 .slider-buttons {
   display: none;
   height: 39px;
@@ -838,13 +837,14 @@ body {
     padding-left: 24px;
     padding-top: 23px;
   }
+
   .header-features-icon {
     width: 40px;
     height: 40px;
     margin-bottom: 9px;
   }
   .header-features-text {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-left: 4px;
   }
   .section .container {
@@ -867,6 +867,7 @@ body {
     padding-top: 2px;
     font-size: 4rem;
   }
+
   .steps-num:after {
     width: 36%;
     margin-left: 6rem;
@@ -886,7 +887,6 @@ body {
     font-size: 1.15rem;
     line-height: 160%;
     color: #828a99;
-
     margin-top: 1.1rem;
     margin-bottom: 1.375rem;
   }

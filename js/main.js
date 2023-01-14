@@ -7,13 +7,11 @@ const menu = document.querySelector(".mobile-menu");
 
 const lightModeOn = (e) => {
   navbar.classList.add("navbar-light");
-  // logo.href.baseVal = "./img/sprite.svg#logo";
   logo.style.display = "block";
   logoLight.style.display = "none";
 };
 const lightModeOff = (e) => {
   navbar.classList.remove("navbar-light");
-  // logo.href.baseVal = "./img/sprite.svg#logo-light";
   logo.style.display = "none";
   logoLight.style.display = "block";
 };
@@ -43,7 +41,6 @@ mMenuToggle.addEventListener("click", (e) => {
 
 const swiper = new Swiper(".swiper", {
   speed: 400,
-  autoHeight: true,
   slidesPerView: 5,
   breakpoints: {
     320: {
