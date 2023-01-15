@@ -17,6 +17,9 @@ body {
 .mobile-menu {
   display: none;
 }
+.swiperSlider {
+  overflow: hidden;
+}
 .container {
   width: 92rem;
   margin: auto;
@@ -199,7 +202,17 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-.slider-buttons-step {
+.step-button-prev,
+.step-button-next {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(235, 235, 240, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.swiper-buttons {
   display: inline-flex;
   margin-left: 60%;
   border: 1px solid rgba(235, 235, 240, 0.2);
@@ -763,6 +776,7 @@ body {
     height: 8rem;
     margin-left: 8px;
   }
+
   .navbar-button {
     padding-left: 5rem;
     padding-right: 4.5rem;

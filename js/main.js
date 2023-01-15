@@ -47,10 +47,10 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 2,
     },
     829: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     992: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     1241: {
       slidesPerView: 5,
@@ -59,5 +59,23 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".slider-button-next",
     prevEl: ".slider-button-prev",
+  },
+});
+const swiperSlider = new Swiper(".swiperSlider", {
+  slidesPerView: 2,
+  breakpoints: {
+    829: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1241: {
+      slidesPerView: 4,
+    },
+  },
+  navigation: {
+    nextEl: ".step-button-next",
+    prevEl: ".step-button-prev",
   },
 });
