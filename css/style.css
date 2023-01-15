@@ -20,7 +20,7 @@ body {
 .container {
   width: 92rem;
   margin: auto;
-  padding-left: 16.8px;
+  padding-left: 25px;
 }
 
 .navbar {
@@ -761,6 +761,7 @@ body {
   }
   .navbar-light {
     height: 8rem;
+    margin-left: 8px;
   }
   .navbar-button {
     padding-left: 5rem;
@@ -826,30 +827,27 @@ body {
     max-width: 90rem;
     min-height: 10.5rem;
     padding: 0;
-    padding-top: 6.1rem;
+    padding-top: 6.9rem;
     list-style: none;
     color: #fff;
     position: relative;
   }
   .header-features-item {
-    padding-bottom: 0px;
-    margin-left: 0px;
-    padding-left: 24px;
-    padding-top: 23px;
+    padding: 2px 24px;
   }
-
   .header-features-icon {
     width: 40px;
     height: 40px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    margin-top: 17px;
   }
   .header-features-text {
-    font-size: 2rem;
+    font-size: 2.1rem;
     margin-left: 4px;
   }
   .section .container {
     max-width: 95%;
-    padding-top: 33px;
+    padding-top: 36px;
   }
   .section-title {
     font-family: "Bebas Neue";
@@ -912,7 +910,7 @@ body {
   .header-button {
     padding: 3.3rem 14rem;
     font-size: 10.7px;
-    padding-left: 85px;
+    padding-left: 68px;
     letter-spacing: 0.26px;
   }
 }
