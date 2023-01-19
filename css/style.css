@@ -276,7 +276,6 @@ body {
 }
 .steps-item {
   width: 20.625rem;
-  margin-left: -1px;
 }
 .steps-num {
   font-family: "Bebas Neue";
@@ -498,8 +497,6 @@ body {
   }
   .steps-text {
     padding-right: 10px;
-  }
-  .steps-text {
     width: 147px;
   }
 }
@@ -661,9 +658,9 @@ body {
   .section .container {
     max-width: 100%;
   }
-  .swiper-slide.steps-item {
+  /* .swiper-slide.steps-item {
     max-width: 275px;
-  }
+  } */
   .steps-text {
     width: 80%;
   }
@@ -842,12 +839,13 @@ body {
     margin-top: 4rem;
     margin-bottom: 3.3125rem;
   }
-  .steps-item {
+  /* .steps-item {
     width: 92%;
-  }
-  .swiper-slide.steps-item {
+  } */
+
+  /* .swiper-slide.steps-item {
     max-width: 322px;
-  }
+  } */
   .steps-num {
     font-size: 3rem;
     padding-top: 4px;
