@@ -678,7 +678,7 @@ body {
   .container {
     padding-top: 21px;
     max-width: 95%;
-    margin-left: -1px;
+    margin-left: -5px;
     margin-top: 2px;
     height: 100%;
   }
@@ -892,8 +892,8 @@ body {
   }
 
   .production .container .seporator {
-    margin-left: -2px;
-    margin-top: 28px;
+    margin-left: 2px;
+    margin-top: 29px;
     width: 16.65rem;
   }
   .cards {
@@ -902,20 +902,34 @@ body {
   .card {
     flex-basis: 100%;
   }
+  .cards .card:nth-child(2) {
+    max-height: 431px;
+  }
+  .cards .card:nth-child(3) {
+    height: 428px;
+  }
+  .cards .card:nth-child(5) {
+    height: 428px;
+  }
+  .cards .card:nth-child(6) {
+    height: 428px;
+  }
   .card-contant {
     padding: 0rem 4.6rem;
   }
   .card-title {
-    font-size: 3.3rem;
+    font-size: 3.39rem;
     line-height: 160%;
     color: #292d33;
-    margin-top: 16px;
-    margin-bottom: -0.8rem;
+    margin-top: 15px;
+    margin-bottom: -1.5rem;
     transition: color 0.2s;
   }
   .card-text {
-    font-size: 2.1rem;
-    margin-bottom: 309px;
+    width: 94%;
+    font-size: 2.34rem;
+    margin-bottom: 306px;
+    padding-left: 3px;
   }
   .card-image {
     position: absolute;
