@@ -269,6 +269,7 @@ body {
   letter-spacing: 0.4px;
   word-spacing: -4px;
 }
+
 .steps {
   display: flex;
   list-style: none;
@@ -394,6 +395,75 @@ body {
   z-index: 0;
   margin-top: 2px;
 }
+.trademark {
+  padding-top: 30px;
+}
+
+.trademark-cards {
+  display: flex;
+  margin-left: -1px;
+}
+
+.trademark-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas:
+    "logo title title"
+    "logo text text";
+  flex-basis: 50%;
+  text-decoration: none;
+  border: 1px solid #ebebf0;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  padding-bottom: 3.4rem;
+}
+.trademark-card-logo {
+  grid-area: logo;
+  fill: #828a99;
+  width: 98%;
+  height: 102%;
+}
+.trademark-section-title {
+  font-family: "Bebas Neue";
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: #292d33;
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+  letter-spacing: 0.7px;
+  word-spacing: -2px;
+}
+.section-title-small {
+  display: none;
+}
+.trademark-card-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292d33;
+  grid-area: title;
+  margin: 0;
+}
+.trademark-card-text {
+  margin-top: 0.625rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+  grid-area: text;
+}
+.trademark-card:hover {
+  border-color: #5c8ee6;
+}
+.trademark-card:hover .trademark-card-logo {
+  fill: #5c8ee6;
+}
+.trademark-card:hover .trademark-card-title {
+  color: #5c8ee6;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 13px;
@@ -450,6 +520,10 @@ body {
   .card {
     flex-basis: 50%;
   }
+
+  .trademark-cards {
+    flex-direction: column;
+  }
 }
 @media (max-width: 992px) {
   html {
@@ -498,6 +572,15 @@ body {
   .steps-text {
     padding-right: 10px;
     width: 147px;
+  }
+  .trademark-card {
+    grid-template-areas: "logo title" "text text";
+  }
+  .trademark-card-title {
+    font-size: 2.75rem;
+  }
+  .trademark-card-text {
+    font-size: 1.875rem;
   }
 }
 @media (max-width: 750px) {
@@ -658,9 +741,6 @@ body {
   .section .container {
     max-width: 100%;
   }
-  /* .swiper-slide.steps-item {
-    max-width: 275px;
-  } */
   .steps-text {
     width: 80%;
   }
@@ -670,6 +750,63 @@ body {
   .cards {
     width: 97%;
   }
+  .trademark {
+    margin-top: 13.5rem;
+    margin-left: 5px;
+  }
+  .trademark-section-title {
+    display: none;
+    font-family: "Bebas Neue";
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 1.4125rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.4px;
+    word-spacing: -4px;
+  }
+  .section-title-small {
+    display: block;
+    font-family: "Bebas Neue";
+    font-size: 6rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 4.1rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.4px;
+    word-spacing: -4px;
+  }
+  .trademark-cards {
+    margin-top: 5.5rem;
+    width: 97%;
+  }
+  .trademark-card {
+    grid-template-areas: "logo title" "text text";
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: auto 2fr;
+    grid-column-gap: 0.1rem;
+  }
+  .trademark-card-logo {
+    width: 73%;
+    margin-left: 10px;
+    margin-top: -14px;
+  }
+  .trademark-card-title {
+    font-size: 2.4rem;
+    padding-left: 3px;
+    padding-top: 10px;
+    line-height: 26px;
+  }
+  .trademark-card-text {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 11px;
+    letter-spacing: -0.11px;
+    line-height: 22px;
+    margin-bottom: 11px;
+    margin-top: -6px;
+  }
 }
 @media (max-width: 480px) {
   html {
@@ -678,7 +815,7 @@ body {
   .container {
     padding-top: 21px;
     max-width: 95%;
-    margin-left: -5px;
+    margin-left: -2px;
     margin-top: 2px;
     height: 100%;
   }
@@ -839,13 +976,6 @@ body {
     margin-top: 4rem;
     margin-bottom: 3.3125rem;
   }
-  /* .steps-item {
-    width: 92%;
-  } */
-
-  /* .swiper-slide.steps-item {
-    max-width: 322px;
-  } */
   .steps-num {
     font-size: 3rem;
     padding-top: 4px;
@@ -937,6 +1067,63 @@ body {
     right: 0;
     width: 100%;
     z-index: 0;
+  }
+  .trademark {
+    margin-top: 13.5rem;
+    margin-left: 2px;
+  }
+  .trademark-section-title {
+    display: none;
+    font-family: "Bebas Neue";
+    font-size: 3.75rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 1.4125rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.4px;
+    word-spacing: -4px;
+  }
+  .section-title-small {
+    display: block;
+    font-family: "Bebas Neue";
+    font-size: 6rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 4.1rem;
+    margin-bottom: 2.4rem;
+    letter-spacing: 0.4px;
+    word-spacing: -4px;
+  }
+  .trademark-cards {
+    margin-top: 5.5rem;
+    width: 97%;
+  }
+  .trademark-card {
+    grid-template-areas: "logo title" "text text";
+    grid-template-columns: 0.8fr 1fr;
+    grid-template-rows: auto 2fr;
+    grid-column-gap: 0.1rem;
+  }
+  .trademark-card-logo {
+    width: 73%;
+    margin-left: 10px;
+    margin-top: -14px;
+  }
+  .trademark-card-title {
+    font-size: 3.4rem;
+    padding-left: 3px;
+    padding-top: 10px;
+    line-height: 26px;
+  }
+  .trademark-card-text {
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 11px;
+    letter-spacing: -0.11px;
+    line-height: 22px;
+    margin-bottom: 11px;
+    margin-top: -6px;
   }
 }
 @media (max-width: 350px) {
