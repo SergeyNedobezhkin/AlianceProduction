@@ -313,7 +313,7 @@ body {
   margin-top: 0.625rem;
   margin-bottom: 1.375rem;
 }
-.steps-link {
+.button-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -322,7 +322,7 @@ body {
   line-height: 160%;
   color: #5c8ee6;
 }
-.steps-link::before {
+.button-link::before {
   content: "";
   width: 40px;
   height: 1px;
@@ -330,7 +330,7 @@ body {
   margin-right: 1.25rem;
   transition: width 0.2s;
 }
-.steps-link:hover::before {
+.button-link:hover::before {
   width: 60px;
 }
 .steps-buttons {
@@ -464,12 +464,120 @@ body {
 .trademark-card:hover .trademark-card-title {
   color: #5c8ee6;
 }
+.founder {
+  min-height: 41.25rem;
+  position: relative;
+  padding-top: 81px;
+  margin-bottom: 183px;
+}
+.founder-photo {
+  position: absolute;
+  left: 0;
+  width: 44.1%;
+  top: 25px;
+  height: 100%;
+  object-fit: cover;
+}
+.founder-contant-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.founder-contant {
+  max-width: 45rem;
+}
+.founder-title {
+  font-family: "Bebas Neue";
+  width: 90%;
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: #292d33;
+  margin-top: 1.4125rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 1px;
+  word-spacing: -3px;
+}
+.founder-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  width: 98%;
+  margin-bottom: 27px;
+}
+.founder-button-link-small {
+  display: none;
+}
+
+.clients-wrapper {
+  display: flex;
+  gap: 16px;
+}
+.clients-contant {
+  flex-basis: 50%;
+}
+.clients-title {
+  font-family: "Bebas Neue";
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: #292d33;
+  margin-top: 1.4125rem;
+  margin-bottom: 2.34rem;
+  letter-spacing: 0.4px;
+  word-spacing: -1px;
+}
+.clients-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+}
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 49px;
+  color: #292d33;
+}
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+  margin-top: 29px;
+}
+.clients-logo-item {
+  flex-basis: 33%;
+  border: 1px solid #ebebf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.clients-logo {
+  max-width: 100%;
+  width: 70px;
+  height: 70px;
+  margin-top: 23px;
+  margin-bottom: 33px;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 13px;
   }
   .header-image {
     background-position: center;
+  }
+  .clients-contant {
+    flex-basis: 52%;
+  }
+  .founder {
+    margin-bottom: 130px;
+  }
+  .founder-text {
+    font-size: 16px;
+  }
+  .founder-button-link {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1460px) {
@@ -484,6 +592,15 @@ body {
   }
   .header-phone {
     margin-right: 2rem;
+  }
+  .founder {
+    margin-bottom: 130px;
+  }
+  .founder-text {
+    font-size: 1.3rem;
+  }
+  .founder-button-link {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 1240px) {
@@ -524,6 +641,24 @@ body {
   .trademark-cards {
     flex-direction: column;
   }
+  .founder-contant {
+    max-width: 35rem;
+  }
+  .clients-wrapper {
+    flex-direction: column;
+  }
+  .founder {
+    margin-bottom: 130px;
+  }
+  .founder-contant {
+    max-width: 30rem;
+  }
+  .founder-text {
+    font-size: 1.3rem;
+  }
+  .founder-button-link {
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 992px) {
   html {
@@ -552,6 +687,18 @@ body {
   .steps-text {
     width: 150px;
   }
+  .founder {
+    margin-bottom: 130px;
+  }
+  .founder-contant {
+    max-width: 30rem;
+  }
+  .founder-text {
+    font-size: 1.5rem;
+  }
+  .founder-button-link {
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 829px) {
   html {
@@ -573,6 +720,9 @@ body {
     padding-right: 10px;
     width: 147px;
   }
+  .card-text {
+    font-size: 1.3rem;
+  }
   .trademark-card {
     grid-template-areas: "logo title" "text text";
   }
@@ -580,7 +730,19 @@ body {
     font-size: 2.75rem;
   }
   .trademark-card-text {
-    font-size: 1.875rem;
+    font-size: 1.4rem;
+  }
+  .founder {
+    margin-bottom: 130px;
+  }
+  .founder-contant {
+    max-width: 30rem;
+  }
+  .founder-text {
+    font-size: 1.4rem;
+  }
+  .founder-button-link {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 750px) {
@@ -798,7 +960,7 @@ body {
     line-height: 26px;
   }
   .trademark-card-text {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
     padding-left: 11px;
@@ -806,6 +968,38 @@ body {
     line-height: 22px;
     margin-bottom: 11px;
     margin-top: -6px;
+  }
+  .founder {
+    margin-bottom: 80px;
+  }
+  .founder-contant {
+    margin-top: 60px;
+  }
+  .founder-contant-wrapper {
+    justify-content: start;
+  }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+  .founder-text {
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 160%;
+    color: #828a99;
+  }
+  .founder-button-link {
+    font-size: 1.1rem;
+  }
+  .clients-list {
+    columns: 1 auto;
+  }
+  .clients-logo-item {
+    flex-basis: 50%;
+  }
+  .clients-logo-list .clients-logo-item:nth-child(9) {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -1005,11 +1199,17 @@ body {
     margin-bottom: 0rem;
     padding-right: 0px;
   }
-  .steps-link {
+  .button-link {
     font-size: 2.5rem;
     padding-top: 21px;
   }
-  .steps-link::before {
+  .founder-button-link {
+    display: none;
+  }
+  .founder-button-link-small {
+    display: flex;
+  }
+  .button-link::before {
     content: "";
     width: 6.6rem;
     height: 1px;
@@ -1069,7 +1269,7 @@ body {
     z-index: 0;
   }
   .trademark {
-    margin-top: 13.5rem;
+    margin-top: 9.5rem;
     margin-left: 2px;
   }
   .trademark-section-title {
@@ -1124,6 +1324,90 @@ body {
     line-height: 22px;
     margin-bottom: 11px;
     margin-top: -6px;
+  }
+  .founder {
+    padding-top: 43px;
+    margin-bottom: 183px;
+  }
+
+  .founder-contant-wrapper {
+    justify-content: start;
+  }
+  .founder-contant {
+    margin-top: 12px;
+    max-width: 35rem;
+  }
+  .founder-title {
+    width: 106%;
+    font-size: 5.75rem;
+    line-height: 120%;
+    margin-top: 4.3rem;
+    margin-bottom: 1.8rem;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+  }
+  .founder-text {
+    font-weight: 400;
+    font-size: 2.35rem;
+    line-height: 150%;
+    color: #828a99;
+    width: 166%;
+    margin-bottom: 5px;
+  }
+  .founder-button-link {
+    display: none;
+  }
+  .founder-button-link-small {
+    display: flex;
+    font-size: 2.4rem;
+  }
+
+  .clients {
+    margin-top: -22.5rem;
+  }
+
+  .clients-contant {
+    margin-top: 2px;
+  }
+  .clients-seporator {
+    margin-left: 1px;
+    margin-bottom: -23px;
+  }
+  .clients-title {
+    font-family: "Bebas Neue";
+    font-size: 5.75rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 7rem;
+    margin-bottom: 2.34rem;
+    letter-spacing: 1px;
+    word-spacing: -1px;
+  }
+
+  .clients-list-item {
+    padding-top: 16px;
+    gap: 3.4rem;
+    font-size: 14px;
+    line-height: 0px;
+  }
+  .clients-logo-list {
+    margin-top: 4px;
+  }
+  .clients-logo-item {
+    flex-basis: 48%;
+    border: 1px solid #ebebf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .clients-logo {
+    max-width: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 23px;
+    margin-bottom: 23px;
   }
 }
 @media (max-width: 350px) {
