@@ -561,7 +561,7 @@ body {
   margin-top: 23px;
   margin-bottom: 33px;
 }
-.clients-logo-item .clients-logo:hover {
+.clients-logo-item:hover {
   filter: grayscale(0);
 }
 @media (max-width: 1700px) {
