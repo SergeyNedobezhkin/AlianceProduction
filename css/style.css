@@ -552,6 +552,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  filter: grayscale(0.9);
 }
 .clients-logo {
   max-width: 100%;
@@ -559,6 +560,9 @@ body {
   height: 70px;
   margin-top: 23px;
   margin-bottom: 33px;
+}
+.clients-logo-item .clients-logo:hover {
+  filter: grayscale(0);
 }
 @media (max-width: 1700px) {
   html {
