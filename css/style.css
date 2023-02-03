@@ -672,10 +672,15 @@ body {
   display: flex;
   gap: 10.4rem;
 }
+.input-group-vertical {
+  display: flex;
+  flex-direction: column;
+}
 .input-group {
   position: relative;
   height: 66px;
   flex-grow: 1;
+  background-color: #f0f2f5;
 }
 .input {
   position: absolute;
@@ -685,13 +690,13 @@ body {
   left: 0;
   padding: 1.25rem 1.875rem;
   border: 1px solid #e4e4eb;
-  background-color: #f0f2f5;
+  background-color: inherit;
 }
 .input-name {
-  width: 151%;
+  width: 100%;
 }
 .input-phone {
-  width: 151%;
+  width: 100%;
 }
 .input-group-label {
   position: absolute;
@@ -714,7 +719,7 @@ body {
   top: -0.3rem;
   left: 1.25rem;
   font-size: 0.625rem;
-  background-color: #f0f2f5;
+  background-color: inherit;
   padding: 0 10px;
 }
 .cta-form-footer {
@@ -883,6 +888,97 @@ body {
   font-size: 0.75rem;
   padding-right: 0.3125rem;
 }
+.input-group-wrapper {
+  gap: 1.875rem;
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41, 45, 51, 0.5);
+  z-index: 10;
+  display: flex;
+  transition: opacity 0.2s;
+}
+.modal.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+.modal.is-open .modal-dialog {
+  transform: translateY(0);
+}
+.modal-dialog {
+  background-color: #fff;
+  margin: auto;
+  margin-top: 9.3%;
+  margin-right: 38.3%;
+  max-width: 28.75rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.5rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+  position: relative;
+  transform: translateY(-10%);
+  transition: transform 0.3s;
+}
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(235, 235, 240, 1);
+}
+
+.modal-title {
+  font-family: "Bebas Neue";
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 1.7rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 120%;
+  color: #292d33;
+}
+.modal-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  margin-bottom: 1.875rem;
+  margin-top: 0px;
+}
+.modal-input-group {
+  background-color: #fff;
+}
+.modal-form-footer {
+  margin-top: 1.875rem;
+}
+.modal-form-button {
+  display: block;
+  width: 100%;
+  font-size: 0.9rem;
+  height: 62px;
+  padding-top: 18px;
+}
+.modal-notify {
+  padding-top: 1.5rem;
+}
+
 @media (max-width: 1700px) {
   html {
     font-size: 13px;
@@ -911,6 +1007,92 @@ body {
     color: #292d33;
     padding-left: 4.5625rem;
     padding-right: 5.1875rem;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 9.3%;
+    max-width: 28.75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 0px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    height: 62px;
+    padding-top: 18px;
+  }
+  .modal-notify {
+    padding-top: 1.5rem;
   }
 }
 @media (max-width: 1460px) {
@@ -958,6 +1140,92 @@ body {
     color: #292d33;
     padding-left: 4.5625rem;
     padding-right: 5.1875rem;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 9.3%;
+    max-width: 28.75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 0px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    height: 62px;
+    padding-top: 18px;
+  }
+  .modal-notify {
+    padding-top: 1.5rem;
   }
 }
 @media (max-width: 1240px) {
@@ -1048,6 +1316,7 @@ body {
     flex-direction: column;
     gap: 2.7rem;
   }
+
   .input-group {
     height: 66px;
     flex-grow: 1;
@@ -1266,6 +1535,92 @@ body {
   .footer-seporator {
     color: #ebebf0;
     background-color: #ebebf0;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 9.3%;
+    max-width: 28.75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 0px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    height: 62px;
+    padding-top: 18px;
+  }
+  .modal-notify {
+    padding-top: 1.5rem;
   }
 }
 @media (max-width: 992px) {
@@ -1595,6 +1950,110 @@ body {
   .footer-seporator {
     color: #ebebf0;
     background-color: #ebebf0;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin-top: 12%;
+    margin-left: 189px;
+    max-width: 54%;
+    height: 568px;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    width: 40px;
+    height: 38px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    max-width: 97%;
+    font-size: 1.35rem;
+    padding-left: 10px;
+    line-height: 161%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 1px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+    width: 96%;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 93%;
+    font-size: 1.4rem;
+    height: 62px;
+    padding-top: 17px;
+    margin-left: 11px;
+    margin-top: 16px;
+  }
+  .modal-notify {
+    padding-left: 11px;
+    width: 53.5rem;
+  }
+  .notify-text {
+    max-width: 29.75rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.35rem;
+  }
+  .input-group-vertical {
+    margin-top: 18px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 829px) {
@@ -1937,6 +2396,110 @@ body {
   .footer-seporator {
     color: #ebebf0;
     background-color: #ebebf0;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin-top: 7%;
+    margin-left: 24%;
+    max-width: 46%;
+    height: 568px;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    width: 40px;
+    height: 38px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    max-width: 97%;
+    font-size: 1.35rem;
+    padding-left: 10px;
+    line-height: 161%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 1px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+    width: 96%;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 93%;
+    font-size: 1.4rem;
+    height: 62px;
+    padding-top: 17px;
+    margin-left: 11px;
+    margin-top: 16px;
+  }
+  .modal-notify {
+    padding-left: 11px;
+    width: 53.5rem;
+  }
+  .notify-text {
+    max-width: 28.75rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.35rem;
+  }
+  .input-group-vertical {
+    margin-top: 18px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 750px) {
@@ -2491,6 +3054,110 @@ body {
   .footer-seporator {
     color: #ebebf0;
     background-color: #ebebf0;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin-top: 12%;
+    margin-left: 90px;
+    max-width: 64%;
+    height: 568px;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    width: 40px;
+    height: 38px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    max-width: 97%;
+    font-size: 1.35rem;
+    padding-left: 10px;
+    line-height: 161%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 1px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+    width: 96%;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 93%;
+    font-size: 1.4rem;
+    height: 62px;
+    padding-top: 17px;
+    margin-left: 11px;
+    margin-top: 16px;
+  }
+  .modal-notify {
+    padding-left: 11px;
+    width: 53.5rem;
+  }
+  .notify-text {
+    max-width: 29.75rem;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.35rem;
+  }
+  .input-group-vertical {
+    margin-top: 18px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 480px) {
@@ -3200,6 +3867,105 @@ body {
   .footer-seporator {
     color: #ebebf0;
     background-color: #ebebf0;
+  }
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
+    transition: opacity 0.2s;
+  }
+  .modal.is-open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+  }
+  .modal.is-open .modal-dialog {
+    transform: translateY(0);
+  }
+  .modal-dialog {
+    background-color: #fff;
+    margin-top: 7%;
+    margin-left: -24px;
+    margin-right: 20px;
+    max-width: 102%;
+    height: 568px;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
+  }
+  .modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    right: 28px;
+    width: 40px;
+    height: 38px;
+    border: 1px solid rgba(235, 235, 240, 1);
+  }
+
+  .modal-title {
+    font-family: "Bebas Neue";
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 1.7rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 120%;
+    color: #292d33;
+  }
+  .modal-text {
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    max-width: 97%;
+    font-size: 2.33rem;
+    padding-left: 10px;
+    line-height: 161%;
+    color: #828a99;
+    margin-bottom: 1.875rem;
+    margin-top: 1px;
+  }
+  .modal-input-group {
+    background-color: #fff;
+    width: 96%;
+  }
+  .modal-form-footer {
+    margin-top: 1.875rem;
+  }
+  .modal-form-button {
+    display: block;
+    width: 93%;
+    font-size: 2.4rem;
+    height: 62px;
+    padding-top: 11px;
+    margin-left: 11px;
+    margin-top: 16px;
+  }
+  .modal-notify {
+    padding-left: 11px;
+    width: 53.5rem;
+  }
+  .input-group-vertical {
+    margin-top: 18px;
+    margin-left: 10px;
   }
 }
 @media (max-width: 350px) {

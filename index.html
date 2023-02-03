@@ -137,7 +137,7 @@
           >+7 (499) 686-10-14</a
         >
       </div>
-      <button class="navbar-button button">
+      <button class="navbar-button button" data-toggle="modal">
         <svg class="button-icon" width="24" height="24">
           <use href="./img/sprite.svg#phone"></use>
         </svg>
@@ -157,7 +157,7 @@
             будущего проекта напрямую зависит от анализа существующих паттернов
             поведения.
           </p>
-          <div class="button header-button">Подробнее о компании</div>
+          <div class="button header-button" data-toggle="modal">Подробнее о компании</div>
         </div>
 
         <!-- Slider -->
@@ -574,22 +574,22 @@
               <h2 class="footer-menu-title">Контрактное производство</h2>
               <ul class="footer-menu-list footer-menu-column-2">
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Автомобильная химия</a>
+                  <a href="#" class="footer-menu-link">Автомобильная химия</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Бытовая химия</a>
+                  <a href="#" class="footer-menu-link">Бытовая химия</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Дезинфицирующие средства</a>
+                  <a href="#" class="footer-menu-link">Дезинфицирующие средства</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Пищевые аэрозоли</a>
+                  <a href="#" class="footer-menu-link">Пищевые аэрозоли</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Косметическая продукция</a>
+                  <a href="#" class="footer-menu-link">Косметическая продукция</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Краски аэрозольные</a>
+                  <a href="#" class="footer-menu-link">Краски аэрозольные</a>
                 </li>
               </ul>
           </div>
@@ -598,10 +598,10 @@
               <h2 class="footer-menu-title">Собственные марки</h2>
               <ul class="footer-menu-list">
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Автохимия AG-Tech</a>
+                  <a href="#" class="footer-menu-link">Автохимия AG-Tech</a>
                 </li>
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link">Автохимия AP</a>
+                  <a href="#" class="footer-menu-link">Автохимия AP</a>
                 </li>            
               </ul>
           </div>
@@ -609,7 +609,7 @@
           <div class="footer-menu-wrapper-3">   
               <ul class="footer-menu-list">
                 <li class="footer-menu-item">
-                  <a href="" class="footer-menu-link footer-menu-link-bold">О компании</a>
+                  <a href="#" class="footer-menu-link footer-menu-link-bold">О компании</a>
                 </li>
                 <li class="footer-menu-item">
                   <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
@@ -640,5 +640,39 @@
      </div>
       </div>         
     </footer>
+    <menu class="modal">
+      <div class="modal-dialog">
+        <h2 class="modal-title">Есть вопросы?</h2>
+        <a href="#" class="modal-close">
+          <svg class="close-icon" width="24" height="24">
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </a>
+        <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+          <form action="#" class="modal-form">
+
+            <div class="input-group-wrapper input-group-vertical">
+              <div class="input-group modal-input-group">
+                <input id="modal-user-name" class="input input-name modal-input" type="text"  placeholder=" ">
+                <label class="input-group-label " for="modal-user-name">Имя</label>
+              </div>
+              <div class="input-group modal-input-group">
+                <input id="modal-user-phone" class="input input-phone modal-input" type="tel"  placeholder=" ">
+                <label class="input-group-label " for="modal-user-phone">Номер телефона</label>
+              </div>
+            </div>
+            <div class=" modal-form-footer">
+              <button type="submit" class="button modal-form-button">Отправить заявку</button>
+              <div class="notify modal-notify">
+                <svg class="notify-icon" width="14" height="14">
+                  <use href="./img/sprite.svg#shield"></use>
+                </svg>
+                <p class="notify-text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную конфиденциальность информации!</p>
+              </div>
+            </div>
+
+          </form>        
+      </div>
+    </menu>
   </body>
 </html>

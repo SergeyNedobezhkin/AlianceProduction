@@ -97,3 +97,28 @@ const swiperBlog = new Swiper(".blog-slider", {
     prevEl: ".blog-button-prev",
   },
 });
+
+const modal = document.querySelector(".modal");
+const modalMenu = document.querySelector("menu");
+const modalToggle = document.querySelectorAll("[data-toggle=modal]");
+const modalClose = document.querySelectorAll(".modal-close");
+
+modalToggle.forEach((elem) => {
+  elem.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("is-open");
+  });
+});
+modalClose.forEach((elem) => {
+  elem.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.remove("is-open");
+  });
+});
+
+modalMenu.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (e.target === modalClose || e.target === modalMenu) {
+    return modal.classList.remove("is-open");
+  }
+});
