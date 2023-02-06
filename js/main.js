@@ -98,27 +98,23 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
 });
 
+const modalDialog = document.querySelector(".modal-dialog");
 const modal = document.querySelector(".modal");
-const modalMenu = document.querySelector("menu");
-const modalToggle = document.querySelectorAll("[data-toggle=modal]");
-const modalClose = document.querySelectorAll(".modal-close");
 
-modalToggle.forEach((elem) => {
-  elem.addEventListener("click", (e) => {
+document.addEventListener("click", (e) => {
+  if (
+    e.target.dataset.toggle === "modal" ||
+    e.target.parentNode.dataset.toggle === "modal" ||
+    (!e.composedPath().includes(modalDialog) &&
+      modal.classList.contains("is-open"))
+  ) {
     e.preventDefault();
-    modal.classList.add("is-open");
-  });
-});
-modalClose.forEach((elem) => {
-  elem.addEventListener("click", (e) => {
-    e.preventDefault();
-    modal.classList.remove("is-open");
-  });
-});
 
-modalMenu.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (e.target === modalClose || e.target === modalMenu) {
-    return modal.classList.remove("is-open");
+    modal.classList.toggle("is-open");
+  }
+});
+document.addEventListener("keyup", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("is-open")) {
+    modal.classList.toggle("is-open");
   }
 });
