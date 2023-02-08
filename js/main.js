@@ -124,5 +124,3 @@ document.addEventListener("keyup", (e) => {
     modal.classList.toggle("is-open");
   }
 });
-
-import Swiper from "Swiper";
