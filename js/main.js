@@ -1,19 +1,17 @@
 "use strict";
+
 const navbar = document.querySelector(".navbar");
 const logoLight = document.querySelector(".logo-light");
 const logo = document.querySelector(".logo");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
+const isFront = document.body.classList.contains("front-page");
 
 const lightModeOn = (e) => {
   navbar.classList.add("navbar-light");
-  logo.style.display = "block";
-  logoLight.style.display = "none";
 };
 const lightModeOff = (e) => {
   navbar.classList.remove("navbar-light");
-  logo.style.display = "none";
-  logoLight.style.display = "block";
 };
 
 //функция открывания меню
@@ -31,8 +29,16 @@ const closeMenu = (e) => {
   lightModeOff();
 };
 
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+};
+
+//Вкл или выкл светлый режим шапки сайта.
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  if (isFront) {
+    this.scrollY > 1 ? lightModeOn() : lightModeOff();
+  }
 });
 mMenuToggle.addEventListener("click", (e) => {
   e.preventDefault();
@@ -118,3 +124,5 @@ document.addEventListener("keyup", (e) => {
     modal.classList.toggle("is-open");
   }
 });
+
+import Swiper from "Swiper";

@@ -40,14 +40,23 @@ body {
 .navbar-light {
   background-color: #fff;
   color: #292d33;
+}
+.logo-dark {
+  display: none;
+}
+.navbar-light .logo-light {
+  display: none;
+}
+.navbar-light .logo-dark {
+  display: block;
+}
+.navbar-scroll {
   height: 4.5rem;
 }
 .phone-icon {
   fill: #5c8ee6;
 }
-.logo {
-  display: none;
-}
+
 .logo-svg {
   width: 9rem;
   height: 2.75rem;
@@ -141,11 +150,12 @@ body {
   line-height: 160%;
   color: #ffffff;
   background: #5c8ee6;
-  padding: 1.5625rem 3.75rem;
+  padding: 1.54625rem 3.75rem;
   border: none;
   display: inline-block;
   cursor: pointer;
 }
+
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
@@ -977,6 +987,118 @@ body {
 }
 .modal-notify {
   padding-top: 1.5rem;
+}
+.single-block {
+  width: 100%;
+  height: 17.5625rem;
+  left: 0px;
+  margin-top: 5.1rem;
+  background: #f0f2f5;
+}
+.single-block-more {
+  width: 100%;
+  height: 26.9375rem;
+  left: 0px;
+  margin-top: 28px;
+  background: #f0f2f5;
+}
+.header-title-more {
+  font-style: normal;
+  font-size: 5rem;
+  line-height: 120%;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.56px;
+  word-spacing: -2.6px;
+}
+.single-block-image {
+  background-image: url("../img/single-block-img-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom -3rem;
+  position: relative;
+}
+.single-block-image::before {
+  /* content: ""; */
+  position: absolute;
+  background: rgba(41, 45, 51, 0.75);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.single-block-contant {
+  padding-top: 3.91rem;
+}
+.single-block-contant-more {
+  padding-top: 7.2rem;
+}
+
+/* Стиль списка */
+.breadcrumb-wrapper {
+  position: relative;
+  display: flex;
+}
+.single-block-him {
+  position: absolute;
+  bottom: 0px;
+  right: 0rem;
+}
+.breadcrumb {
+  width: 50%;
+  height: 3.7rem;
+  margin-top: 0px;
+}
+ul.breadcrumb {
+  padding: 0px;
+  padding-top: 5px;
+  list-style: none;
+}
+
+/* Отображение элементов списка бок о бок */
+ul.breadcrumb li {
+  display: inline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+}
+
+/* Добавить символ косой черты (/) перед/за каждым элементом списка */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #828a99;
+  content: "—";
+}
+ul.breadcrumb li.breadcrumb-li-more + li:before {
+  color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumb .active {
+  color: rgba(41, 45, 51, 1);
+}
+.breadcrumb .active.breadcrumb-li-more {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+ul.breadcrumb li a {
+  color: #828a99;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
+}
+
+ul.breadcrumb li a.breadcrumb-li-more {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 160%;
 }
 
 @media (max-width: 1700px) {
