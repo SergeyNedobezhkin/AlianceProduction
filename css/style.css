@@ -1898,10 +1898,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .input-name {
     width: 101%;
     height: 95%;
+    font-size: 1.3rem;
   }
   .input-phone {
     width: 101%;
     height: 95%;
+    font-size: 1.3rem;
   }
   .notify {
     gap: 1.3rem;
@@ -2344,10 +2346,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .input-name {
     width: 101%;
     height: 95%;
+    font-size: 1.3rem;
   }
   .input-phone {
     width: 101%;
     height: 95%;
+    font-size: 1.3rem;
   }
   .notify {
     gap: 1.3rem;
@@ -3002,10 +3006,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .input-name {
     width: 101%;
     height: 95%;
+    font-size: 2rem;
   }
   .input-phone {
     width: 101%;
     height: 95%;
+    font-size: 2rem;
   }
   .notify {
     gap: 1.3rem;
@@ -3814,10 +3820,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .input-name {
     width: 101%;
     height: 95%;
+    font-size: 2rem;
   }
   .input-phone {
     width: 101%;
     height: 95%;
+    font-size: 2rem;
   }
   .notify {
     gap: 1.3rem;
@@ -4096,6 +4104,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
     font-size: 10.7px;
     padding-left: 68px;
     letter-spacing: 0.26px;
+  }
+  .input-name {
+    font-size: 2rem;
+  }
+  .input-phone {
+    font-size: 2rem;
   }
   .founder-contant {
     max-width: 25rem;
