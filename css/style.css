@@ -4097,4 +4097,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     padding-left: 68px;
     letter-spacing: 0.26px;
   }
+  .founder-contant {
+    max-width: 25rem;
+  }
 }
