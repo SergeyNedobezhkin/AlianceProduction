@@ -6,6 +6,7 @@ const logo = document.querySelector(".logo");
 const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page");
+const pageWidth = document.documentElement.scrollWidth;
 
 const lightModeOn = (e) => {
   navbar.classList.add("navbar-light");
@@ -35,11 +36,14 @@ const changeNavHeight = (height) => {
 
 //Вкл или выкл светлый режим шапки сайта.
 window.addEventListener("scroll", () => {
-  this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  if (pageWidth > 750) {
+    this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");
+  }
   if (isFront) {
     this.scrollY > 1 ? lightModeOn() : lightModeOff();
   }
 });
+
 mMenuToggle.addEventListener("click", (e) => {
   e.preventDefault();
   menu.classList.contains("is-open") ? closeMenu() : openMenu();

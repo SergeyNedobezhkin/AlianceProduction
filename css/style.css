@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   color: #fff;
-  height: 5.675rem;
+  height: 5.875rem;
   position: fixed;
   width: 100%;
   left: 0;
@@ -2669,6 +2669,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .navbar-light .mobile-menu-line {
     background-color: #333;
   }
+
   .mobile-menu-line {
     height: 1px;
     background-color: #fff;
@@ -2776,13 +2777,15 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-left: 2px;
     margin-top: 5px;
     max-width: 24px;
+    color: #333;
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-8px);
     margin-left: 2px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
     max-width: 24px;
   }
+
   .section .container {
     max-width: 100%;
   }
@@ -4096,6 +4099,51 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .input-group-vertical {
     margin-top: 18px;
     margin-left: 10px;
+  }
+  .contract-product-navbar-light {
+    height: 11rem;
+  }
+  .mobile-menu-toggle.contract-product-mobile-menu-toggle {
+    width: 12rem;
+    height: 100%;
+    padding: 4.3rem;
+    margin-left: 5px;
+  }
+  /* Стили для О Компании 480 и ниже */
+
+  /* Стили для Контрактное производство 480 и ниже */
+  .single-block.contract-product {
+    height: 52.5625rem;
+  }
+  .single-block-contant.contract-product-contant {
+    padding-top: 9.91rem;
+  }
+
+  .contract-product-breadcrumb {
+    width: 80%;
+    height: 3.7rem;
+    margin-top: 0px;
+  }
+
+  ul.contract-product-breadcrumb {
+    padding: 0px;
+    padding-top: 18px;
+    list-style: none;
+  }
+  ul.contract-product-breadcrumb li a {
+    color: #828a99;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 160%;
+  }
+  ul.contract-product-breadcrumb li {
+    display: inline;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.03rem;
+    line-height: 160%;
   }
 }
 @media (max-width: 350px) {

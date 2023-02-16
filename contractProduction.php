@@ -98,8 +98,8 @@
         </a>
       </div>
     </div>
-    <nav class="navbar navbar-light">
-      <a href="#" class="mobile-menu-toggle">
+    <nav class="navbar navbar-light contract-product-navbar-light">
+      <a href="#" class="mobile-menu-toggle contract-product-mobile-menu-toggle">
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
         <div class="mobile-menu-line"></div>
@@ -144,14 +144,14 @@
         <span class="button-text">Получить консультацию</span>
       </button>
     </nav>
-    <div class="single-block">
+    <div class="single-block contract-product">
       <div class="container">
-        <div class="single-block-contant">
+        <div class="single-block-contant contract-product-contant">
           <div class="seporator"></div>
           <h1 class="header-title">
             Контрактное производство
           </h1>
-          <ul class="breadcrumb">
+          <ul class="breadcrumb contract-product-breadcrumb">
             <li><a href="./index.php">Главная</a></li>
             <li class="active">Контрактное производство</li>
           </ul>        
