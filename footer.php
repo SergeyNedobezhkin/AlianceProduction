@@ -1,4 +1,3 @@
-<script src="https://unpkg.com/imask" defer></script>
 <section class="cta">
   <div class="bg-grey section-cta">
     <img src="./img/cta.png" alt="call to action" class="cta-image">
@@ -165,7 +164,7 @@
           <label class="input-group-label " for="modal-user-name">Имя</label>
         </div>
         <div class="input-group modal-input-group">
-          <input id="modal-user-phone" class="input input-phone modal-input" name="userphone" type="tel"
+          <input id="modal-user-phone" data-tel-input class="input input-phone modal-input" name="userphone" type="tel"
             placeholder=" ">
           <label class="input-group-label " for="modal-user-phone">Номер телефона</label>
         </div>
@@ -182,4 +181,5 @@
       </div>
     </form>
   </div>
+  <script src="./js/phoneInput.js"></script>
 </menu>
