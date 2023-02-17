@@ -156,15 +156,15 @@
     </a>
     <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие
       вопросы и поможем даже в самых сложных случаях!</p>
-    <form action="#" class="modal-form">
+    <form action="./handler.php" method = "POST" class="modal-form">
 
       <div class="input-group-wrapper input-group-vertical">
         <div class="input-group modal-input-group">
-          <input id="modal-user-name" class="input input-name modal-input" type="text" placeholder=" ">
+          <input id="modal-user-name" class="input input-name modal-input" name="username" type="text" placeholder=" ">
           <label class="input-group-label " for="modal-user-name">Имя</label>
         </div>
         <div class="input-group modal-input-group">
-          <input id="modal-user-phone" class="input input-phone modal-input" type="tel" placeholder=" ">
+          <input id="modal-user-phone" class="input input-phone modal-input" name="userphone" type="tel" placeholder=" ">
           <label class="input-group-label " for="modal-user-phone">Номер телефона</label>
         </div>
       </div>

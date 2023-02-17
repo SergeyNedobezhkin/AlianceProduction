@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <script src="./js/main.js" defer></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/just-validate.production.min.js"></script>
     <title>Aliance Production</title>
   </head>
   <body class="front-page">
