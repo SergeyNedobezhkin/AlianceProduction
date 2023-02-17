@@ -162,7 +162,7 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            alert("Форма отправлена");
           } else {
             alert(response.statusText);
           }
