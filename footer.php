@@ -1,3 +1,5 @@
+<script src="./js/phoneInput.js" defer></script>
+<script src="./js/just-validate.production.min.js "></script>
 <section class="cta">
   <div class="bg-grey section-cta">
     <img src="./img/cta.png" alt="call to action" class="cta-image">
@@ -13,7 +15,7 @@
             <label class="input-group-label" for="user-name">Имя</label>
           </div>
           <div class="input-group">
-            <input id="user-phone" class="input input-phone" name="userphone" type="tel" placeholder=" " maxlength="30"
+            <input id="user-phone" class="input input-phone" name="userphone" type="tel" placeholder=" " maxlength="18"
               required />
             <label class="input-group-label" for="user-phone">Номер телефона</label>
           </div>
@@ -164,7 +166,7 @@
           <label class="input-group-label " for="modal-user-name">Имя</label>
         </div>
         <div class="input-group modal-input-group">
-          <input id="modal-user-phone" data-tel-input class="input input-phone modal-input" name="userphone" type="tel"
+          <input id="modal-user-phone" class="input input-phone modal-input" name="userphone" type="tel" maxlength="18"
             placeholder=" ">
           <label class="input-group-label " for="modal-user-phone">Номер телефона</label>
         </div>
@@ -181,5 +183,5 @@
       </div>
     </form>
   </div>
-  <script src="./js/phoneInput.js"></script>
+
 </menu>
