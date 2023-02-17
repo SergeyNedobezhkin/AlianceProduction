@@ -732,6 +732,7 @@ body {
   background-color: inherit;
   padding: 0 10px;
 }
+
 .cta-form-footer {
   display: flex;
   gap: 1.875rem;

@@ -1,3 +1,4 @@
+<script src="https://unpkg.com/imask" defer></script>
 <section class="cta">
   <div class="bg-grey section-cta">
     <img src="./img/cta.png" alt="call to action" class="cta-image">
@@ -42,7 +43,7 @@
 
       <div class="footer-info">
         <svg class="phone-icon" width="24" height="24">
-          <use href="./img/sprite.svg#mark"></use>
+          <use href="./img/sprite.svg#mark"></use>;
         </svg>
         <address class="footer-info-address">
           г. Мосвка, Холодильный пер. 4к1с8
@@ -156,7 +157,7 @@
     </a>
     <p class="modal-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие
       вопросы и поможем даже в самых сложных случаях!</p>
-    <form action="./handler.php" method = "POST" class="modal-form">
+    <form action="./handler.php" method="POST" class="modal-form">
 
       <div class="input-group-wrapper input-group-vertical">
         <div class="input-group modal-input-group">
@@ -164,7 +165,8 @@
           <label class="input-group-label " for="modal-user-name">Имя</label>
         </div>
         <div class="input-group modal-input-group">
-          <input id="modal-user-phone" class="input input-phone modal-input" name="userphone" type="tel" placeholder=" ">
+          <input id="modal-user-phone" class="input input-phone modal-input" name="userphone" type="tel"
+            placeholder=" ">
           <label class="input-group-label " for="modal-user-phone">Номер телефона</label>
         </div>
       </div>
@@ -178,7 +180,6 @@
             конфиденциальность информации!</p>
         </div>
       </div>
-
     </form>
   </div>
 </menu>
