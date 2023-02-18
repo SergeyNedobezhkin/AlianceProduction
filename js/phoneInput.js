@@ -41,11 +41,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
       if (inputNumbersValue.length >= 10) {
         formatedInputValue += "-" + inputNumbersValue.substring(9, 11);
       }
-    } else {
-      //Номер не из РФ.
-      formatedInputValue = input.value =
-        "+" + inputNumbersValue.substring(0, 16);
     }
+    // else {
+    //Номер не из РФ.
+    // formatedInputValue = input.value =
+    //   "+" + inputNumbersValue.substring(0, 16);
+    // }
     input.value = formatedInputValue;
   };
 
