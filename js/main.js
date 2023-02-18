@@ -1,5 +1,4 @@
 "use strict";
-
 const navbar = document.querySelector(".navbar");
 const logoLight = document.querySelector(".logo-light");
 const logo = document.querySelector(".logo");
@@ -7,6 +6,10 @@ const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page");
 const pageWidth = document.documentElement.scrollWidth;
+const modalDialog = document.querySelector(".modal-dialog");
+const modal = document.querySelector(".modal");
+const modalThinks = document.querySelector(".modal-thinks");
+const modalAnswer = document.querySelector(".modal-answer");
 
 const lightModeOn = (e) => {
   navbar.classList.add("navbar-light");
@@ -108,9 +111,6 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
 });
 
-const modalDialog = document.querySelector(".modal-dialog");
-const modal = document.querySelector(".modal");
-
 document.addEventListener("click", (e) => {
   if (
     e.target.dataset.toggle === "modal" ||
@@ -119,13 +119,30 @@ document.addEventListener("click", (e) => {
       modal.classList.contains("is-open"))
   ) {
     e.preventDefault();
-
     modal.classList.toggle("is-open");
   }
 });
+
+document.addEventListener("click", (e) => {
+  if (
+    e.target.dataset.toggle == "modal-answer" ||
+    e.target.parentNode.dataset.toggle == "modal-answer" ||
+    (!e.composedPath().includes(modalAnswer) &&
+      modalThinks.classList.contains("is-open"))
+  ) {
+    e.preventDefault();
+    modalThinks.classList.toggle("is-open");
+  }
+});
+
 document.addEventListener("keyup", (e) => {
-  if (e.key === "Escape" && modal.classList.contains("is-open")) {
+  if (
+    e.key === "Escape" &&
+    modal.classList.contains("is-open") &&
+    modalThinks.classList.contains("is-open")
+  ) {
     modal.classList.toggle("is-open");
+    modalThinks.classList.toggle("is-open");
   }
 });
 
@@ -162,9 +179,10 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            alert("Форма отправлена!");
+            modal.classList.toggle("is-open");
+            modalThinks.classList.toggle("is-open");
           } else {
-            alert(response.statusText);
+            alert("Ошибка: " + response.statusText);
           }
         });
       };

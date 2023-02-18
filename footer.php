@@ -152,7 +152,7 @@
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
     <a href="#" class="modal-close" data-toggle="modal">
-      <svg class="close-icon" width="24" height="24">
+      <svg class="close-icon"data-toggle="modal" width="24" height="24">
         <use href="./img/sprite.svg#close"></use>
       </svg>
     </a>
@@ -183,5 +183,20 @@
       </div>
     </form>
   </div>
+</menu>
 
+<menu class="modal-thinks" >
+    <div class="modal-dialog modal-answer" >
+    <img class="modal-answer-img" src="./img/thanks.png"  alt="thanks">
+    <a href="#" class="modal-close modal-close-answer" data-toggle="modal-answer">
+      <svg class="close-icon" data-toggle="modal-answer" width="24" height="24">
+        <use href="./img/sprite.svg#close"></use>
+      </svg>
+    </a>
+    <h2 class="modal-title modal-title-answer">Спасибо за заявку!</h2>
+    <p class="modal-text modal-text-answer">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
+      <div class="modal-form-footer modal-form-footer-answer">
+        <button  type="submit" class="button modal-form-button modal-form-button-answer" data-toggle="modal-answer">Вернуться на главную</button>
+      </div>
+  </div>
 </menu>
