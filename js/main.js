@@ -6,10 +6,11 @@ const mMenuToggle = document.querySelector(".mobile-menu-toggle");
 const menu = document.querySelector(".mobile-menu");
 const isFront = document.body.classList.contains("front-page");
 const pageWidth = document.documentElement.scrollWidth;
-const modalDialog = document.querySelector(".modal-dialog");
-const modal = document.querySelector(".modal");
-const modalThinks = document.querySelector(".modal-thinks");
-const modalAnswer = document.querySelector(".modal-answer");
+
+let currentModal; //Текущее модальное окно
+let modalDialog; //Белое диалоговое окно
+let alertModal = document.querySelector("#alert-modal"); // окно с благодарностью
+const modalButtons = document.querySelectorAll("[data-toggle=modal]"); // Находим все кнопки вызыватели модальных окон
 
 const lightModeOn = (e) => {
   navbar.classList.add("navbar-light");
@@ -111,38 +112,29 @@ const swiperBlog = new Swiper(".blog-slider", {
   },
 });
 
-document.addEventListener("click", (e) => {
-  if (
-    e.target.dataset.toggle === "modal" ||
-    e.target.parentNode.dataset.toggle === "modal" ||
-    (!e.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+modalButtons.forEach((button) => {
+  // клик по переключателю
+  button.addEventListener("click", (e) => {
     e.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+    // определяем текущее открытое окно
+    currentModal = document.querySelector(button.dataset.target);
+    //Открываем текущее окно
+    currentModal.classList.toggle("is-open");
+    //назначаем текущее белое диалоговое окно
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    //отслеживаем клик по окну и пустым областям
+    currentModal.addEventListener("click", (e) => {
+      //если клик мимо то закрываем диалоговое окно
+      if (!e.composedPath().includes(modalDialog)) {
+        currentModal.classList.remove("is-open");
+      }
+    });
+  });
 });
-
-document.addEventListener("click", (e) => {
-  if (
-    e.target.dataset.toggle == "modal-answer" ||
-    e.target.parentNode.dataset.toggle == "modal-answer" ||
-    (!e.composedPath().includes(modalAnswer) &&
-      modalThinks.classList.contains("is-open"))
-  ) {
-    e.preventDefault();
-    modalThinks.classList.toggle("is-open");
-  }
-});
-
+//ловим событие нажатие на кнопки
 document.addEventListener("keyup", (e) => {
-  if (
-    e.key === "Escape" &&
-    modal.classList.contains("is-open") &&
-    modalThinks.classList.contains("is-open")
-  ) {
-    modal.classList.toggle("is-open");
-    modalThinks.classList.toggle("is-open");
+  if (e.key === "Escape" && currentModal.classList.contains("is-open")) {
+    currentModal.classList.toggle("is-open");
   }
 });
 
@@ -179,8 +171,17 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            modal.classList.toggle("is-open");
-            modalThinks.classList.toggle("is-open");
+            currentModal.classList.remove("is-open");
+            alertModal.classList.add("is-open");
+            currentModal = alertModal;
+            modalDialog = currentModal.querySelector(".modal-dialog");
+            //отслеживаем клик по окну и пустым областям
+            currentModal.addEventListener("click", (e) => {
+              //если клик мимо то закрываем диалоговое окно
+              if (!e.composedPath().includes(modalDialog)) {
+                currentModal.classList.remove("is-open");
+              }
+            });
           } else {
             alert("Ошибка: " + response.statusText);
           }
