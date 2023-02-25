@@ -1066,6 +1066,7 @@ body {
   margin-top: 28px;
   background: #f0f2f5;
 }
+
 .header-title-more {
   font-style: normal;
   font-size: 5rem;
@@ -1082,6 +1083,7 @@ body {
   background-position: center bottom -3rem;
   position: relative;
 }
+
 .single-block-image::before {
   /* content: ""; */
   position: absolute;
@@ -1136,14 +1138,14 @@ ul.breadcrumb li + li:before {
   content: "—";
 }
 ul.breadcrumb li.breadcrumb-li-more + li:before {
-  color: rgba(255, 255, 255, 1);
+  color: #d9d9d9;
 }
 
 .breadcrumb .active {
   color: rgba(41, 45, 51, 1);
 }
 .breadcrumb .active.breadcrumb-li-more {
-  color: rgba(255, 255, 255, 1);
+  color: #d9d9d9;
 }
 
 /* Добавить цвет для всех ссылок внутри списка */
@@ -1157,12 +1159,75 @@ ul.breadcrumb li a {
 }
 
 ul.breadcrumb li a.breadcrumb-li-more {
-  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 160%;
+  color: #d9d9d9;
+}
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.error-404 {
+  font-family: "Bebas Neue";
+  margin-top: 13.6rem;
+  margin-bottom: 0rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 300px;
+  line-height: 100%;
+  color: #5c8ee6;
+}
+.error-title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 160%;
+  text-align: center;
+  color: #292d33;
+  margin-bottom: 1.225rem;
+}
+.error-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  text-align: center;
+  color: #292d33;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.blog-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: -15px;
+}
+.blog-section-text-left {
+  max-width: 635px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
+}
+.blog-section-text-right {
+  max-width: 635px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #828a99;
 }
 
 @media (max-width: 1700px) {

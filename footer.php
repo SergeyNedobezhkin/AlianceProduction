@@ -1,39 +1,5 @@
 <script src="./js/phoneInput.js" defer></script>
 <script src="./js/just-validate.production.min.js "></script>
-<section class="cta">
-  <div class="bg-grey section-cta">
-    <img src="./img/cta.png" alt="call to action" class="cta-image">
-    <div class="cta-form-wrapper container">
-      <form action="./handler.php" method="POST" class="cta-form">
-        <h3 class="section-title cta-form-title">Хотите сотрудничать?</h3>
-        <p class="cta-form-text">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все
-          интересующие вопросы и поможем даже в самых сложных случаях!</p>
-        <div class="input-group-wrapper">
-          <div class="input-group">
-            <input id="user-name" class="input input-name" name="username" type="text" placeholder=" " maxlength="30"
-              required />
-            <label class="input-group-label" for="user-name">Имя</label>
-          </div>
-          <div class="input-group">
-            <input id="user-phone" class="input input-phone" name="userphone" type="tel" placeholder=" " maxlength="18"
-              required />
-            <label class="input-group-label" for="user-phone">Номер телефона</label>
-          </div>
-        </div>
-        <div class="cta-form-footer">
-          <button type="submit" class="button cta-form-button">Отправить заявку</button>
-          <div class="notify">
-            <svg class="notify-icon" width="14" height="14">
-              <use href="./img/sprite.svg#shield"></use>
-            </svg>
-            <p class="notify-text">Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную
-              конфиденциальность информации!</p>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
@@ -148,11 +114,11 @@
     </div>
   </div>
 </footer>
-<menu class="modal" id = "feedback-modal">
+<menu class="modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
     <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
-      <svg class="close-icon"data-toggle="modal" width="24" height="24">
+      <svg class="close-icon" data-toggle="modal" width="24" height="24">
         <use href="./img/sprite.svg#close"></use>
       </svg>
     </a>
@@ -186,17 +152,19 @@
 </menu>
 
 <menu class="modal modal-thinks" id="alert-modal">
-    <div class="modal-dialog modal-answer">
-    <img class="modal-answer-img" src="./img/thanks.png"  alt="thanks">
+  <div class="modal-dialog modal-answer">
+    <img class="modal-answer-img" src="./img/thanks.png" alt="thanks">
     <a href="#" class="modal-close modal-close-answer" data-toggle="modal" data-target="#alert-modal">
       <svg class="close-icon" data-toggle="modal-answer" width="24" height="24">
         <use href="./img/sprite.svg#close"></use>
       </svg>
     </a>
     <h2 class="modal-title modal-title-answer">Спасибо за заявку!</h2>
-    <p class="modal-text modal-text-answer">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-      <div class="modal-form-footer modal-form-footer-answer">
-        <button onclick="window.location.href = 'http://alianceproduction/'" type="submit"  class="button modal-form-button modal-form-button-answer" data-toggle="modal">Вернуться на главную</button>
-      </div>
+    <p class="modal-text modal-text-answer">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие
+      вопросы и поможем даже в самых сложных случаях!</p>
+    <div class="modal-form-footer modal-form-footer-answer">
+      <button onclick="window.location.href = 'http://alianceproduction/'" type="submit"
+        class="button modal-form-button modal-form-button-answer" data-toggle="modal">Вернуться на главную</button>
+    </div>
   </div>
 </menu>
