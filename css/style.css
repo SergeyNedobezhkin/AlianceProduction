@@ -211,12 +211,23 @@ body {
   color: #fff;
   position: relative;
 }
+.header-features-black {
+  display: flex;
+  max-width: 90rem;
+  min-height: 10.5rem;
+  padding: 0;
+  margin-top: 74px;
+  list-style: none;
+  color: #fff;
+  position: relative;
+}
 .header-features-item {
   padding: 1.75rem 3rem;
   height: auto;
   width: 18rem;
-  border: 1px solid rgba(235, 235, 240, 0.2);
+  border: 1px solid rgba(166, 166, 169, 0.145);
 }
+
 .header-features .header-features-item:nth-child(2) {
   max-width: 285.2px;
 }
@@ -246,6 +257,16 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+.slider-button-prev-black,
+.slider-button-next-black {
+  height: 100%;
+  flex-basis: 50%;
+  border: 1px solid rgba(166, 166, 169, 0.145);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
 .header-features-icon {
   width: 2.25rem;
@@ -260,6 +281,9 @@ body {
   line-height: 160%;
   margin-bottom: 0;
   margin-top: 1.125rem;
+}
+.header-features-text-black {
+  color: #000;
 }
 .section {
   margin-top: 9.7rem;
@@ -485,6 +509,11 @@ body {
   padding-top: 81px;
   margin-bottom: 183px;
 }
+.circle {
+  margin-bottom: -108px;
+  margin-top: 142px;
+  padding-top: 87px;
+}
 .founder-photo {
   position: absolute;
   left: 0;
@@ -493,9 +522,28 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.circle-photo {
+  position: relative;
+  left: -3px;
+  width: 48%;
+  top: -130px;
+  height: 91%;
+  object-fit: contain;
+}
 .founder-contant-wrapper {
   display: flex;
   justify-content: flex-end;
+}
+.circle-contant-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.circle-contant {
+  max-width: 52rem;
+  margin-top: -79px;
+  margin-left: 6rem;
+  margin-right: 0.5rem;
 }
 .founder-contant {
   max-width: 45rem;
@@ -517,6 +565,25 @@ body {
   line-height: 160%;
   color: #828a99;
   width: 98%;
+  margin-bottom: 27px;
+}
+.circle-title {
+  font-family: "Bebas Neue";
+  width: 90%;
+  font-size: 3.75rem;
+  line-height: 120%;
+  color: #292d33;
+  margin-top: 1.7rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.8px;
+  word-spacing: -1.3px;
+}
+.circle-text {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #828a99;
+  width: 100%;
   margin-bottom: 27px;
 }
 .founder-button-link-small {

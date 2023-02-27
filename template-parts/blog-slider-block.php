@@ -51,7 +51,6 @@
         if (!empty($block_title_blogMore)) {
           echo '<a href="./blog.php" class="button-link blog-button-link">Весь блог</a>';
         } ?>
-
         <div class="blog-buttons primary-buttons-wrapper">
           <div class="blog-button-prev primary-button-prev">
             <svg width="36" height="24">
