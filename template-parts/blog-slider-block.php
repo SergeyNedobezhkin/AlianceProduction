@@ -23,17 +23,23 @@
     } ?>
     <div class="swiper blog-slider">
       <div class="swiper-wrapper">
-        <a href="./blogMore.php" class="swiper-slide blog-card"><img src="img/blog/blog-photo.jpg" alt="blog-photo"
-            class="blog-card-image">
-
+        <a href="./blogMore.php" class="swiper-slide blog-card">
+          <picture class="blog-card-image">
+            <source type="image/webp" srcset="img/blog/blog-photo.webp">
+            <source type="image/jpg" srcset="img/blog/blog-photo.jpg">
+            <img src="./img/blog/blog-photo.jpg" alt="blog-photo">
+          </picture>
           <h3 class="blog-card-title">Современная методология разработки одухотворила всех причастных</h3>
           <p class="blog-card-text">Действия представителей оппозиции, превозмогая сложившуюся непростую экономическую
             ситуацию, в равной степени предоставлены...</p>
         </a>
 
-        <a href="./blogMore.php" class="swiper-slide blog-card"><img src="img/blog/blog-post.jpg" alt="blog-post"
-            class="blog-card-image">
-
+        <a href="./blogMore.php" class="swiper-slide blog-card">
+          <picture class="blog-card-image">
+            <source type="image/webp" srcset="img/blog/blog-post.webp">
+            <source type="image/jpg" srcset="img/blog/blog-post.jpg">
+            <img src="./img/blog/blog-post.jpg" alt="blog-post">
+          </picture>
           <h3 class="blog-card-title">Сложно сказать, почему жизнь прекрасна</h3>
           <p class="blog-card-text">Сложно сказать, почему элементы политического процесса функционально разнесены на
             независимые элементы. Безусловно, высокотехнологичная...</p>

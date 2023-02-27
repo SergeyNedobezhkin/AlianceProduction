@@ -157,7 +157,12 @@
               <?php echo $page_title ?>
             </li>
           </ul>
-          <img src="./img/him.png" alt="him" class="single-block-him">
+          <picture class="single-block-him">
+            <source type="image/webp" srcset="img/him.webp">
+            <source type="image/png" srcset="img/him.png">
+            <img src="./img/him.png" alt="him">
+          </picture>
+
         </div>
       </div>
     </div>

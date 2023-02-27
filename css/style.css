@@ -10,6 +10,7 @@ html {
   src: url("../fonts/BebasNeueBook.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 body {
   font-family: "Noto Sans", sans-serif;
@@ -68,7 +69,7 @@ body {
   padding-top: 5.875rem;
 }
 .header-image {
-  background-image: url("../img/header-bg.jpeg");
+  background-image: url("jpeg../img/header-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom -3rem;

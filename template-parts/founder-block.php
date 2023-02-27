@@ -1,5 +1,9 @@
 <section class="section founder">
-  <img src="./img/found.jpg" alt="founder" class="founder-photo">
+  <picture class="founder-photo">
+    <source type="image/webp" srcset="img/found.webp">
+    <source type="image/jpeg" srcset="img/found.jpg">
+    <img src="img/found.jpg" alt="founder">
+  </picture>
   <div class="container">
     <div class="founder-contant-wrapper">
       <div class="founder-contant">

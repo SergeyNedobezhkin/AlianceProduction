@@ -153,7 +153,11 @@
 
 <menu class="modal modal-thinks" id="alert-modal">
   <div class="modal-dialog modal-answer">
-    <img class="modal-answer-img" src="./img/thanks.png" alt="thanks">
+    <picture class="modal-answer-img">
+      <source type="image/webp" srcset="img/thanks.webp">
+      <source type="image/png" srcset="img/thanks.png">
+      <img src="img/thanks.png" alt="thanks" class="modal-answer-img">
+    </picture>
     <a href="#" class="modal-close modal-close-answer" data-toggle="modal" data-target="#alert-modal">
       <svg class="close-icon" data-toggle="modal-answer" width="24" height="24">
         <use href="./img/sprite.svg#close"></use>
