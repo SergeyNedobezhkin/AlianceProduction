@@ -515,6 +515,7 @@ body {
   padding-top: 81px;
   margin-bottom: 183px;
 }
+
 .circle {
   margin-bottom: -108px;
   margin-top: 142px;
@@ -523,8 +524,8 @@ body {
 .founder-photo {
   position: absolute;
   left: 0;
-  width: 44.1%;
-  top: 25px;
+  width: 66.4%;
+  top: 13px;
   height: 100%;
   object-fit: cover;
 }
