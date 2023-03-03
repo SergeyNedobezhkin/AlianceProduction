@@ -447,6 +447,7 @@ body {
 .trademark-cards {
   display: flex;
   margin-left: -1px;
+  cursor: pointer;
 }
 
 .trademark-card {
@@ -524,7 +525,7 @@ body {
 .founder-photo {
   position: absolute;
   left: 0;
-  width: 66.4%;
+  width: 52.45rem;
   top: 13px;
   height: 100%;
   object-fit: cover;
@@ -1336,6 +1337,16 @@ ul.breadcrumb li a.breadcrumb-li-more {
     padding-left: 4.5625rem;
     padding-right: 5.1875rem;
   }
+  .cta-image {
+    position: absolute;
+    bottom: 0px;
+    left: -9rem;
+    max-width: 45rem;
+    width: 50%;
+  }
+  .input-group-wrapper {
+    width: 100%;
+  }
   .modal {
     opacity: 0;
     visibility: hidden;
@@ -1437,10 +1448,24 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-right: 2rem;
   }
   .founder {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
+  }
+  .founder-contant {
+    margin-top: 60px;
+  }
+  .founder-contant-wrapper {
+    justify-content: start;
+  }
+  .founder-photo {
+    position: relative;
+    width: 60rem;
+    margin-bottom: 3.125rem;
   }
   .founder-text {
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 160%;
+    color: #828a99;
   }
   .founder-button-link {
     font-size: 1.1rem;
@@ -1455,7 +1480,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .cta-image {
     position: absolute;
     bottom: 0px;
-    left: -124px;
+    left: -16rem;
     max-width: 45rem;
     width: 50%;
   }
@@ -1468,6 +1493,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #292d33;
     padding-left: 4.5625rem;
     padding-right: 5.1875rem;
+  }
+  .input-group-wrapper {
+    width: 100%;
   }
   .modal {
     opacity: 0;
@@ -1597,23 +1625,31 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .trademark-cards {
     flex-direction: column;
   }
-  .founder-contant {
-    max-width: 35rem;
-  }
-  .clients-wrapper {
-    flex-direction: column;
-  }
   .founder {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
   }
   .founder-contant {
-    max-width: 30rem;
+    margin-top: 60px;
+  }
+  .founder-contant-wrapper {
+    justify-content: start;
+  }
+  .founder-photo {
+    position: relative;
+    width: 60rem;
+    margin-bottom: 3.125rem;
   }
   .founder-text {
-    font-size: 1.3rem;
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 160%;
+    color: #828a99;
   }
   .founder-button-link {
     font-size: 1.1rem;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
   .primary-button-prev,
   .primary-button-next {
@@ -1864,6 +1900,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #ebebf0;
     background-color: #ebebf0;
   }
+  .input-group-wrapper {
+    width: 100%;
+  }
   .modal {
     opacity: 0;
     visibility: hidden;
@@ -1977,17 +2016,32 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .steps-text {
     width: 150px;
   }
+
   .founder {
-    margin-bottom: 130px;
+    margin-bottom: 80px;
   }
   .founder-contant {
-    max-width: 30rem;
+    margin-top: 60px;
+  }
+  .founder-contant-wrapper {
+    justify-content: start;
+  }
+  .founder-photo {
+    position: relative;
+    width: 60rem;
+    margin-bottom: 3.125rem;
   }
   .founder-text {
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 160%;
+    color: #828a99;
   }
   .founder-button-link {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
   .blog-card {
     display: flex;
@@ -2281,6 +2335,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #ebebf0;
     background-color: #ebebf0;
   }
+  .input-group-wrapper {
+    width: 100%;
+  }
   .modal {
     opacity: 0;
     visibility: hidden;
@@ -2418,17 +2475,32 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .trademark-card-text {
     font-size: 1.4rem;
   }
+
   .founder {
     margin-bottom: 130px;
   }
   .founder-contant {
-    max-width: 30rem;
+    margin-top: 60px;
+  }
+  .founder-contant-wrapper {
+    justify-content: start;
+  }
+  .founder-photo {
+    position: relative;
+    width: 60rem;
+    margin-bottom: 3.125rem;
   }
   .founder-text {
-    font-size: 1.4rem;
+    font-weight: 400;
+    font-size: 1.35rem;
+    line-height: 160%;
+    color: #828a99;
   }
   .founder-button-link {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
   .blog-card {
     display: flex;
@@ -2729,6 +2801,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #ebebf0;
     background-color: #ebebf0;
   }
+  .input-group-wrapper {
+    width: 100%;
+  }
   .modal {
     opacity: 0;
     visibility: hidden;
@@ -2837,9 +2912,6 @@ ul.breadcrumb li a.breadcrumb-li-more {
 @media (max-width: 750px) {
   .container {
     max-width: 90%;
-  }
-  .header-features {
-    display: none;
   }
   .header-features-item {
     width: 277px;
@@ -3071,7 +3143,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-top: 60px;
   }
   .founder-contant-wrapper {
-    justify-content: start;
+    flex-direction: column;
   }
   .founder-photo {
     position: relative;
@@ -3086,6 +3158,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .founder-button-link {
     font-size: 1.1rem;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
   .clients-list {
     columns: 1 auto;
@@ -3392,6 +3467,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #ebebf0;
     background-color: #ebebf0;
   }
+  .input-group-wrapper {
+    width: 100%;
+  }
   .modal {
     opacity: 0;
     visibility: hidden;
@@ -3634,13 +3712,13 @@ ul.breadcrumb li a.breadcrumb-li-more {
     max-width: 90rem;
     min-height: 10.5rem;
     padding: 0;
-    padding-top: 6.9rem;
+    padding-top: 2.9rem;
     list-style: none;
     color: #fff;
     position: relative;
   }
   .header-features-item {
-    padding: 2px 24px;
+    padding: 2px 7px;
   }
   .header-features-icon {
     width: 40px;
@@ -3649,12 +3727,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-top: 17px;
   }
   .header-features-text {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     margin-left: 4px;
   }
   .section .container {
     max-width: 100%;
-    padding-top: 43px;
+    padding-top: 42px;
     padding-left: 16px;
   }
   .section-title {
@@ -3833,6 +3911,11 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-top: 12px;
     max-width: 35rem;
   }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
   .founder-title {
     width: 106%;
     font-size: 5.75rem;
@@ -3864,6 +3947,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
 
   .clients-contant {
     margin-top: 2px;
+  }
+  .clients-wrapper {
+    flex-direction: column;
   }
   .clients-seporator {
     margin-left: 1px;
@@ -3902,8 +3988,8 @@ ul.breadcrumb li a.breadcrumb-li-more {
     max-width: 100%;
     width: 50px;
     height: 50px;
-    margin-top: 23px;
-    margin-bottom: 23px;
+    margin-top: 12px;
+    margin-bottom: 35px;
   }
   .blog-card {
     display: flex;
@@ -3934,7 +4020,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .blog-card-title {
     font-size: 3.37rem;
-    padding-top: 79px;
+    padding-top: 76px;
     padding-left: 0px;
     padding-right: 16px;
     line-height: 121%;
@@ -4207,6 +4293,10 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #ebebf0;
     background-color: #ebebf0;
   }
+
+  .input-group-wrapper {
+    width: 100%;
+  }
   .modal {
     opacity: 0;
     visibility: hidden;
@@ -4316,9 +4406,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     padding: 4.3rem;
     margin-left: 5px;
   }
-  /* Стили для О Компании 480 и ниже */
 
-  /* Стили для Контрактное производство 480 и ниже */
   .single-block.contract-product {
     height: 52.5625rem;
   }
