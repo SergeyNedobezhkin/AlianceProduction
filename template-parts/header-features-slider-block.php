@@ -1,4 +1,4 @@
-<div class="container">
+<section class="container <?= $container_features_black; ?> container-features">
   <!-- Slider -->
 
   <div class="swiper features-slider">
@@ -130,4 +130,4 @@
     } ?>
 
   </div>
-</div>
+  </div>

@@ -4,7 +4,11 @@ $header_style = "single-block";
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
 $header_style_mobile = "header-style-mobile";
 $header_features_black = 'header-features-text-black';
+$container_features_black = "container-features-black";
+$founder_photo_about = "founder-photo-about";
+$founder_about = "founder-about";
 $navbar_mobile = "navbar-mobile";
+// $founder_button_link = "founder-button-link";
 $block_slider_arrow_internalPage = "block-slider-arrow-internalPage";
 $block_title_blogMore_about = 'Исследовательский центр </br> Aliance production';
 $block_title_blogMore_text_left = 'Явные признаки победы институционализации рассмотрены исключительно в разрезе
@@ -40,9 +44,11 @@ include_once('./template-parts/header-page.php'); ?>
 
 </div>
 </section>
+
 <?php include_once('./template-parts/header-features-slider-block.php'); ?>
-<?php include_once('./template-parts/founder-block.php');
-include_once('./template-parts/blog-slider-block.php');
-include_once('./template-parts/clients-block.php'); ?>
-<?php include_once('./template-parts/cta-block.php'); ?>
-<?php include_once('footer.php'); ?>
+<?php include_once('./template-parts/ourProduction.php'); ?>
+<?php include_once('./template-parts/founder-block.php'); ?>
+<?php include_once('./template-parts/blog-slider-block.php'); ?>
+<?php include_once('./template-parts/clients-block.php');
+include_once('./template-parts/cta-block.php');
+include_once('footer.php'); ?>
