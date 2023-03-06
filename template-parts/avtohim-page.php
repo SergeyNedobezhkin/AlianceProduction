@@ -97,8 +97,8 @@
       </a>
     </div>
   </div>
-  <nav class="navbar navbar-light">
-    <a href="#" class="mobile-menu-toggle">
+  <nav class="navbar navbar-light <?= $navbar_mobile; ?> ">
+    <a href="#" class="<?= $mobile_style_menu_toggle; ?> mobile-menu-toggle ">
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>

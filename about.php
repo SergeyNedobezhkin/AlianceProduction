@@ -1,7 +1,11 @@
 <?php
 $page_title = 'О компании';
 $header_style = "single-block";
+$mobile_style_menu_toggle = "mobile-style-menu-toggle";
+$header_style_mobile = "header-style-mobile";
 $header_features_black = 'header-features-text-black';
+$navbar_mobile = "navbar-mobile";
+$block_slider_arrow_internalPage = "block-slider-arrow-internalPage";
 $block_title_blogMore_about = 'Исследовательский центр </br> Aliance production';
 $block_title_blogMore_text_left = 'Явные признаки победы институционализации рассмотрены исключительно в разрезе
 маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего
@@ -17,7 +21,6 @@ $block_title_blogMore_text_right = 'С учётом сложившейся ме�
 разбавленное
 изрядной долей эмпатии, рациональное мышление однозначно фиксирует необходимость стандартных подходов.';
 include_once('./template-parts/header-page.php'); ?>
-
 
 <div class="container">
   <section class="circle">

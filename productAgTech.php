@@ -1,7 +1,11 @@
 <?php
 $page_title = 'Автохимия AG-Tech';
 $header_style = "single-block";
+$navbar_mobile = "navbar-mobile";
+$header_style_mobile = "header-style-mobile";
+$mobile_style_menu_toggle = "mobile-style-menu-toggle";
 $block_title_blogMore_about = 'Исследовательский центр </br> Aliance production';
+$block_slider_arrow_internalPage = "block-slider-arrow-internalPage";
 $block_title_blogMore_text_left = 'Явные признаки победы институционализации рассмотрены исключительно в разрезе
 маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего
 мира могут быть ограничены исключительно образом мышления. Лишь независимые государства набирают популярность

@@ -1,6 +1,10 @@
 <?php
 $page_title = 'Автомобильная химия';
 $header_style = "single-block";
+$header_style_mobile = "header-style-mobile";
+$mobile_style_menu_toggle = "mobile-style-menu-toggle";
+$navbar_mobile = "navbar-mobile";
+$block_slider_arrow_internalPage = "block-slider-arrow-internalPage";
 $block_title_blogMore_about = 'Исследовательский центр </br> Aliance production';
 $block_title_blogMore_text_left = 'Явные признаки победы институционализации рассмотрены исключительно в разрезе
 маркетинговых и финансовых предпосылок. Приятно, граждане, наблюдать, как активно развивающиеся страны третьего

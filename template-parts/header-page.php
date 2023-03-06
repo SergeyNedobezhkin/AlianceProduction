@@ -98,8 +98,8 @@
       </a>
     </div>
   </div>
-  <nav class="navbar navbar-light">
-    <a href="#" class="mobile-menu-toggle">
+  <nav class="navbar navbar-light <?= $navbar_mobile; ?> ">
+    <a href="#" class="<?= $mobile_style_menu_toggle; ?> mobile-menu-toggle ">
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
@@ -142,7 +142,7 @@
       <span class="button-text">Получить консультацию</span>
     </button>
   </nav>
-  <header class="single-block  <?= $header_style; ?>">
+  <header class="single-block  <?= $header_style; ?> <?= $header_style_mobile; ?>">
     <div class="container">
       <div class="single-block-contant">
         <div class="seporator"></div>
@@ -150,8 +150,9 @@
           <?php echo $page_title ?>
         </h1>
         <ul class="breadcrumb <?= $blogMore_li_style; ?>">
-          <li><a class="<?= $blogMore_li_style; ?>" href="./index.php">Главная</a></li>
-          <li class="active <?= $blogMore_li_style; ?>">
+          <li><a class="<?= $blogMore_li_style; ?>" href="./index.php">Главная</a>
+          </li>
+          <li class="active <?= $blogMore_li_style; ?> ">
             <?php echo $page_title ?>
           </li>
         </ul>

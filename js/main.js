@@ -16,7 +16,9 @@ const lightModeOn = (e) => {
   navbar.classList.add("navbar-light");
 };
 const lightModeOff = (e) => {
-  navbar.classList.remove("navbar-light");
+  if (isFront) {
+    navbar.classList.remove("navbar-light");
+  }
 };
 
 //функция открывания меню

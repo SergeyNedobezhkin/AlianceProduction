@@ -17,4 +17,4 @@ if ($sendToTelegram) {
   echo "Success";
 } else {
   echo "error";
-}
+} ?>
