@@ -1,4 +1,5 @@
-<section class="container <?= $container_features_black; ?> container-features">
+<section
+  class="container <?= $container_features_black; ?> <?= $container_features_mobile_black; ?> container-features">
   <!-- Slider -->
 
   <div class="swiper features-slider">

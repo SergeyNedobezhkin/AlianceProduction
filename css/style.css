@@ -397,12 +397,20 @@ body {
 .button-link-load:hover::before {
   width: 60px;
 }
+.production {
+  margin-top: 7rem;
+  margin-bottom: 8rem;
+}
+.seo {
+  margin-top: 0rem;
+}
 .seo-title {
   font-style: normal;
   font-weight: 400;
   font-size: 1.75rem;
   line-height: 160%;
   color: #292d33;
+  margin-bottom: 0rem;
 }
 .seo-text {
   font-style: normal;
@@ -764,6 +772,9 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 24px;
+}
+.blog-slider-avtohim {
+  margin-top: -9.8rem;
 }
 .bg-grey {
   background: #f0f2f5;
@@ -1189,6 +1200,7 @@ body {
   margin-top: 5.1rem;
   background: #f0f2f5;
 }
+
 .single-block-more {
   width: 100%;
   height: 26.9375rem;
@@ -1241,7 +1253,7 @@ body {
   right: 0rem;
 }
 .breadcrumb {
-  width: 50%;
+  /* width: 80%; */
   height: 3.7rem;
   margin-top: 0px;
 }
@@ -1397,6 +1409,50 @@ ul.breadcrumb li a.breadcrumb-li-more {
 }
 .clients-text-2 {
   margin-bottom: 22px;
+}
+.founder-production-avtohim {
+  padding-top: 83px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.founder-production-avtohim-photo {
+  width: 600px;
+  height: 750px;
+  left: 120px;
+}
+.manufacture-avtohim-block-photo {
+  position: absolute;
+  width: 52.5rem;
+  height: 41.25rem;
+  right: 0px;
+  top: 1632px;
+}
+.manufacture-avtohim-block {
+  margin-top: 206px;
+  margin-bottom: 0px;
+}
+.types-him-block {
+  margin-top: 249px;
+  padding-left: 33px;
+}
+
+.types-him-block-text {
+  max-width: 74%;
+}
+.types-him-block-list {
+  list-style: none;
+  padding: 0;
+  columns: 4 auto;
+  margin-top: 33px;
+  gap: 63px;
+}
+.types-him-block-contant {
+  flex-basis: 80%;
+}
+.types-him-block-item {
+  line-height: 160%;
+  width: 18.75rem;
+  padding-top: 1.25rem;
 }
 
 @media (max-width: 1700px) {
@@ -1572,6 +1628,21 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .clients-text-2 {
     margin-bottom: 13px;
     font-size: 1rem;
+  }
+
+  .header-style-mobile-avtohim {
+    height: 51.5625rem;
+    margin-top: 67px;
+  }
+  .single-block {
+    width: 100%;
+    height: 17.5625rem;
+    left: 0px;
+    margin-top: 5.1rem;
+    background: #f0f2f5;
+  }
+  .blog-slider-avtohim {
+    margin-top: 8.2rem;
   }
 }
 @media (max-width: 1460px) {
@@ -1759,7 +1830,11 @@ ul.breadcrumb li a.breadcrumb-li-more {
     font-size: 1.35rem;
   }
   .single-block {
-    width: 111%;
+    width: 100%;
+    height: 17.5625rem;
+    left: 0px;
+    margin-top: 5.1rem;
+    background: #f0f2f5;
   }
   .circle {
     margin-bottom: -108px;
@@ -1778,6 +1853,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    flex-direction: column;
   }
   .circle-contant {
     max-width: 52rem;
@@ -1805,6 +1881,12 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-bottom: 27px;
     padding-bottom: 5px;
     padding-right: 0px;
+  }
+  .single-block-him {
+    display: none;
+  }
+  .container-features-black {
+    margin-left: 4rem;
   }
 }
 @media (max-width: 1240px) {
@@ -2258,6 +2340,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    flex-direction: column;
   }
   .circle-contant {
     max-width: 52rem;
@@ -2281,10 +2364,13 @@ ul.breadcrumb li a.breadcrumb-li-more {
     font-size: 1rem;
     line-height: 160%;
     color: #828a99;
-    width: 170%;
+    width: 100%;
     margin-bottom: 80px;
     padding-bottom: 5px;
     padding-right: 0px;
+  }
+  .container-features-black {
+    margin-left: 4rem;
   }
 }
 @media (max-width: 992px) {
@@ -4332,7 +4418,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .founder-photo {
     position: relative;
-    width: 62.5rem;
+    width: 100%;
     height: 49.25rem;
     left: 0px;
     margin-bottom: 0.125rem;
@@ -4501,6 +4587,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-bottom: 121px;
     margin-right: 12px;
   }
+
   .cta {
     margin-top: 21rem;
   }
@@ -4973,8 +5060,8 @@ ul.breadcrumb li a.breadcrumb-li-more {
     position: relative;
     top: 1rem;
     left: 0rem;
-    width: 57.5625rem;
-    height: 71.2rem;
+    width: 100%;
+    height: 100%;
   }
   .clients-laboratoryWorker {
     margin-top: 74px;
@@ -5014,6 +5101,129 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .single-block {
     width: 100%;
+  }
+  .production {
+    margin-top: -4rem;
+    margin-bottom: 2.4rem;
+  }
+  .seo {
+    margin-top: 0rem;
+  }
+  .seo-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.36rem;
+    line-height: 160%;
+    color: #292d33;
+    margin-bottom: -0.5rem;
+  }
+  .seo-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.76rem;
+    line-height: 156%;
+    color: #828a99;
+  }
+  .button-link-load {
+    display: flex;
+    align-items: start;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 160%;
+    color: #5c8ee6;
+    margin-top: 24px;
+  }
+  /*  Мобильная версия Автомобильная химия*/
+  .single-block-him {
+    display: block;
+  }
+  .single-block-him {
+    display: none;
+  }
+
+  .header-style-mobile-avtohim {
+    height: 51.5625rem;
+    margin-top: 67px;
+  }
+  .founder-production-mobile-avtohim {
+    padding-top: 0px;
+    margin-top: -19px;
+  }
+  .founder-production-avtohim-mobile-photo {
+    width: 57.5625rem;
+    height: 71.875rem;
+    margin-bottom: 16px;
+  }
+  .founder-avtohim-mobile-title {
+    width: 57rem;
+  }
+
+  .container-features-mobile-black {
+    padding-top: 0px;
+    margin-top: -216px;
+    margin-left: 16px;
+  }
+  .header-features-mobile-text-black {
+    padding-bottom: 20px;
+  }
+  .manufacture-avtohim-mobile-block {
+    margin-left: -14px;
+  }
+  .manufacture-avtohim-mobile-block-photo {
+    position: absolute;
+    width: 375px;
+    height: 295px;
+    left: 0px;
+    top: 2738px;
+  }
+  .manufacture-avtohim_title-mobile-block {
+    margin-bottom: -22px;
+  }
+  .manufacture-avtohim-text-mobile-block {
+    margin-bottom: 15px;
+  }
+  .manufacture-avtohim-text-1-mobile-block {
+    font-size: 14.2px;
+    line-height: 155%;
+  }
+  .manufacture-avtohim-list-item-block {
+    padding-top: 11px;
+    gap: 2rem;
+    font-size: 14px;
+    line-height: 0px;
+  }
+  .types-him-mobile-block {
+    margin-top: 421px;
+    padding-left: 0px;
+  }
+  .types-him-mobile-block-title {
+    margin-bottom: -22px;
+  }
+  .types-him-block-mobile-contant {
+    margin-bottom: 15px;
+  }
+  .types-him-block-mobile-text {
+    min-width: 53rem;
+  }
+  .types-him-block-mobile-list {
+    margin-top: 9px;
+  }
+  .types-him-block-mobile-item {
+    padding-top: 37px;
+    gap: 3.4rem;
+    font-size: 14px;
+    line-height: 4px;
+    width: 49.75rem;
+  }
+  .slider-avtohim-mobile-block {
+    margin-bottom: -139px;
+  }
+  .clients-avtohim-mobile-block {
+    margin-top: 16.5rem;
+  }
+  .cta-mobile-block {
+    margin-top: 16rem;
   }
 }
 @media (max-width: 350px) {

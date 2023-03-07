@@ -97,8 +97,8 @@
       </a>
     </div>
   </div>
-  <nav class="navbar navbar-light <?= $navbar_mobile; ?> ">
-    <a href="#" class="<?= $mobile_style_menu_toggle; ?> mobile-menu-toggle ">
+  <nav class="navbar navbar-light <?= $navbar_mobile; ?> <?= $navbar_mobile_button_avtohim; ?> ">
+    <a href="#" class="mobile-menu-toggle <?= $mobile_style_menu_toggle; ?> ">
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
@@ -141,7 +141,8 @@
       <span class="button-text">Получить консультацию</span>
     </button>
   </nav>
-  <div class="single-block">
+  <div
+    class="single-block   <?= $header_style_mobile; ?>  <?= $header_style_mobile_avtohim; ?> <?= $header_style_avtohim; ?>">
     <div class="container">
       <div class="single-block-contant">
         <div class="seporator"></div>

@@ -1,8 +1,8 @@
-<section class="section founder  <?= $founder_about; ?>">
-  <picture class="founder-photo">
+<section class="section founder  <?= $founder_about; ?>  ">
+  <picture class="founder-photo ">
     <source type="image/webp" srcset="img/found.webp">
     <source type="image/jpg" srcset="img/found.jpg">
-    <img src="img/found.jpg" alt="founder" class="founder-photo <?= $founder_photo_about; ?>">
+    <img src="img/found.jpg" alt="founder" class="founder-photo <?= $founder_photo_about; ?> >">
   </picture>
   <div class="container">
     <div class="founder-contant-wrapper">

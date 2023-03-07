@@ -99,7 +99,7 @@
     </div>
   </div>
   <nav class="navbar navbar-light <?= $navbar_mobile; ?> ">
-    <a href="#" class="<?= $mobile_style_menu_toggle; ?> mobile-menu-toggle ">
+    <a href="#" class=" mobile-menu-toggle <?= $mobile_style_menu_toggle; ?>">
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
       <div class="mobile-menu-line"></div>
@@ -152,7 +152,7 @@
         <ul class="breadcrumb <?= $blogMore_li_style; ?>">
           <li><a class="<?= $blogMore_li_style; ?>" href="./index.php">Главная</a>
           </li>
-          <li class="active <?= $blogMore_li_style; ?> ">
+          <li class="active <?= $blogMore_li_style; ?>">
             <?php echo $page_title ?>
           </li>
         </ul>

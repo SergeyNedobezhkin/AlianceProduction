@@ -1,4 +1,4 @@
-<section class="cta">
+<section class="cta <?= $cta_mobile_block; ?> ">
   <div class="bg-grey section-cta">
     <picture class="cta-image">
       <source type="image/webp" srcset="img/cta.webp">

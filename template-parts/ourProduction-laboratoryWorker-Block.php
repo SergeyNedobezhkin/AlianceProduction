@@ -1,4 +1,4 @@
-<div class="section  clients-laboratoryWorker">
+<div class="section  clients-laboratoryWorker ">
 
   <div class="container clients-laboratoryWorker-container">
     <div class="clients-wrapper">

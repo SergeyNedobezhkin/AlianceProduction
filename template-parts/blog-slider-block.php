@@ -1,4 +1,4 @@
-<section class="section blog">
+<section class="section blog <?= $blog_slider_avtohim; ?> ">
   <div class="container">
     <?php
     if (!empty($block_title_blogMore)) {
@@ -21,7 +21,7 @@
       <p class="blog-section-text-left blog-section-wrapper">' . $block_title_blogMore_text_left . '</p>
       </div>';
     } ?>
-    <div class="swiper blog-slider">
+    <div class="swiper blog-slider <?= $slider_avtohim_mobile_block; ?>">
       <div class="swiper-wrapper">
 
         <a href="./blogMore.php" class="swiper-slide blog-card"><img src="img/blog/blog-photo.jpg" alt="blog-photo"

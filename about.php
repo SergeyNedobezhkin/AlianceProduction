@@ -1,14 +1,22 @@
 <?php
 $page_title = 'О компании';
 $header_style = "single-block";
+//Стили для бургер кнопки в мобильной версии
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
+//Стили navbar для мобильной версии
+
+$navbar_mobile = "navbar-mobile";
+//Стили заголовка для мобильной версии
 $header_style_mobile = "header-style-mobile";
+//Блок features для белого фона
 $header_features_black = 'header-features-text-black';
 $container_features_black = "container-features-black";
+
+//Блок отношение к делу и клиентам
 $founder_photo_about = "founder-photo-about";
 $founder_about = "founder-about";
-$navbar_mobile = "navbar-mobile";
-// $founder_button_link = "founder-button-link";
+
+//Стили для слайдера Исследовательский центр
 $block_slider_arrow_internalPage = "block-slider-arrow-internalPage";
 $block_title_blogMore_about = 'Исследовательский центр </br> Aliance production';
 $block_title_blogMore_text_left = 'Явные признаки победы институционализации рассмотрены исключительно в разрезе
@@ -46,7 +54,7 @@ include_once('./template-parts/header-page.php'); ?>
 </section>
 
 <?php include_once('./template-parts/header-features-slider-block.php'); ?>
-<?php include_once('./template-parts/ourProduction.php'); ?>
+<?php include_once('./template-parts/ourProduction-laboratoryWorker-Block.php'); ?>
 <?php include_once('./template-parts/founder-block.php'); ?>
 <?php include_once('./template-parts/blog-slider-block.php'); ?>
 <?php include_once('./template-parts/clients-block.php');
