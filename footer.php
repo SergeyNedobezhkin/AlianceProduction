@@ -3,41 +3,42 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-top">
-      <svg class="logo-svg footer-logo">
-        <use href="./img/sprite.svg#logo"></use>
-      </svg>
-      <a href="tel:+79996861014" class="footer-phone">+7(999) 686-10-14</a>
-
-      <div class="footer-info">
-        <svg class="phone-icon" width="24" height="24">
-          <use href="./img/sprite.svg#mark"></use>;
+      <a href="./">
+        <svg class="logo-svg footer-logo">
+          <use href="./img/sprite.svg#logo"></use>
         </svg>
-        <address class="footer-info-address">
-          г. Мосвка, Холодильный пер. 4к1с8
-        </address>
-      </div>
+        <a href="tel:+74996861014" class="footer-phone">+7(499) 686-10-14</a>
 
-      <div class="footer-info">
-        <svg class="mail-icon" width="24" height="24">
-          <use href="./img/sprite.svg#mail"></use>
-        </svg>
-        <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-email">
-          a.dragunov@tdaliance.ru
-        </a>
-      </div>
+        <div class="footer-info">
+          <svg class="phone-icon" width="24" height="24">
+            <use href="./img/sprite.svg#mark"></use>;
+          </svg>
+          <address class="footer-info-address">
+            г. Мосвка, Холодильный пер. 4к1с8
+          </address>
+        </div>
 
-      <div class="footer-social">
-        <a href="#" class="footer-social-link">
-          <svg class="footer-social-icon" width="24" height="24">
-            <use href="./img/sprite.svg#vk"></use>
+        <div class="footer-info">
+          <svg class="mail-icon" width="24" height="24">
+            <use href="./img/sprite.svg#mail"></use>
           </svg>
-        </a>
-        <a href="#" class="footer-social-link">
-          <svg class="footer-social-icon" width="24" height="24">
-            <use href="./img/sprite.svg#inst"></use>
-          </svg>
-        </a>
-      </div>
+          <a href="mailto:a.dragunov@tdaliance.ru" class="footer-info-email">
+            a.dragunov@tdaliance.ru
+          </a>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" class="footer-social-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link">
+            <svg class="footer-social-icon" width="24" height="24">
+              <use href="./img/sprite.svg#inst"></use>
+            </svg>
+          </a>
+        </div>
     </div>
   </div>
   <hr class="footer-seporator" />

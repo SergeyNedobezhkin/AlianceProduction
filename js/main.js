@@ -112,6 +112,19 @@ const swiperBlog = new Swiper(".blog-slider", {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return (
+        ' <div class="box ' +
+        className +
+        '"> <div class="swiper-pagination-number">' +
+        (index < 10 ? +(index + 1) : index + 1) +
+        "</div> </div>"
+      );
+    },
+  },
 });
 
 modalButtons.forEach((button) => {
@@ -173,8 +186,8 @@ forms.forEach((form) => {
         }).then((response) => {
           if (response.ok) {
             thisForm.reset();
-            currentModal.classList.remove("is-open");
             alertModal.classList.add("is-open");
+            currentModal.classList.remove("is-open");
             currentModal = alertModal;
             modalDialog = currentModal.querySelector(".modal-dialog");
             //отслеживаем клик по окну и пустым областям

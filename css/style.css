@@ -146,6 +146,9 @@ body {
   gap: 0.625rem;
   margin-right: 3.125rem;
 }
+.header-phone-link:hover {
+  color: #5c8ee6;
+}
 .header-phone-link {
   text-decoration: none;
   font-size: 1rem;
@@ -161,6 +164,9 @@ body {
   border: none;
   display: inline-block;
   cursor: pointer;
+}
+.button:hover {
+  background: #3a71d1;
 }
 
 .navbar-button {
@@ -415,9 +421,10 @@ body {
 .seo-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.999rem;
   line-height: 160%;
   color: #828a99;
+  max-width: 90rem;
 }
 .button-link-load .button-link:hover::before {
   width: 3.75rem;
@@ -461,7 +468,9 @@ body {
   border-color: #5c8ee6;
 }
 .card-contant {
-  padding: 2.2rem 3.125rem;
+  padding: 2.2rem 0rem;
+  padding-right: 1rem;
+  padding-left: 3.125rem;
 }
 .card-title {
   font-weight: 400;
@@ -474,7 +483,8 @@ body {
 }
 
 .card-text {
-  width: 90%;
+  width: 85%;
+
   font-weight: 400;
   font-size: 1rem;
   line-height: 160%;
@@ -491,6 +501,10 @@ body {
 }
 .trademark {
   padding-top: 30px;
+}
+.trademark-ownProduct {
+  margin-top: 4.5rem;
+  margin-bottom: -2rem;
 }
 
 .trademark-cards {
@@ -931,6 +945,9 @@ body {
   color: inherit;
   font-size: 1rem;
 }
+.footer-info-email:hover {
+  color: #5c8ee6;
+}
 .footer-logo {
   width: 12.5rem;
   height: 3.75rem;
@@ -945,6 +962,9 @@ body {
   color: #292d33;
   padding-left: 4.5625rem;
   padding-right: 5.6rem;
+}
+.footer-phone:hover {
+  color: #5c8ee6;
 }
 
 .footer-bottom {
@@ -966,6 +986,9 @@ body {
   padding-left: 1.125rem;
   list-style: none;
   margin-right: 0px;
+}
+.footer-menu-link:hover {
+  color: #5c8ee6;
 }
 .footer-menu-column-2 {
   display: block;
@@ -1016,6 +1039,12 @@ body {
   font-size: 0.75rem;
   line-height: 160%;
   color: inherit;
+}
+.footer-menu-title:hover {
+  color: #5c8ee6;
+}
+.footer-policy:hover {
+  color: #5c8ee6;
 }
 .footer-social {
   display: flex;
@@ -1278,6 +1307,7 @@ ul.breadcrumb li + li:before {
   color: #828a99;
   content: "—";
 }
+
 ul.breadcrumb li.breadcrumb-li-more + li:before {
   color: #d9d9d9;
 }
@@ -1453,6 +1483,13 @@ ul.breadcrumb li a.breadcrumb-li-more {
   line-height: 160%;
   width: 18.75rem;
   padding-top: 1.25rem;
+}
+.blog-news {
+  margin-top: 108px;
+  margin-bottom: 256px;
+}
+.blog-slider-news {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1700px) {
@@ -2077,6 +2114,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: inherit;
     font-size: 1rem;
   }
+  .footer-info-email:hover {
+    color: #5c8ee6;
+  }
 
   .footer-logo {
     width: 23.5rem;
@@ -2178,6 +2218,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .footer-policy {
     margin-bottom: 12px;
   }
+
   .made-in {
     display: none;
   }
@@ -3373,9 +3414,6 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .navbar-light {
     height: 6rem;
   }
-  .single-block {
-    width: 124%;
-  }
 
   .header-nav {
     display: none;
@@ -3597,7 +3635,8 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .founder-photo {
     position: relative;
-    width: 70%;
+    width: 91%;
+    height: 90%;
     margin-bottom: 3.125rem;
   }
   .founder-text {
@@ -4037,9 +4076,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .clients-photo {
     position: relative;
     top: 1rem;
-    left: -5rem;
-    width: 51.5625rem;
-    height: 65.2rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
   }
   .clients-title-laboratoryWorker {
     margin-bottom: 28px;
@@ -5172,8 +5211,8 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .manufacture-avtohim-mobile-block-photo {
     position: absolute;
-    width: 375px;
-    height: 295px;
+    width: 62.4375rem;
+    height: 49.4375rem;
     left: 0px;
     top: 2738px;
   }
@@ -5224,6 +5263,23 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .cta-mobile-block {
     margin-top: 16rem;
+  }
+  .header-style-politic-mobile {
+    height: 56rem;
+  }
+  .header-style-politic-title-mobile {
+    padding-bottom: 57px;
+  }
+  .header-style-politic-text-mobile {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 158%;
+  }
+  .politic-wrapper {
+    margin-top: 4rem;
+    width: 58rem;
+    margin-bottom: 16.375rem;
   }
 }
 @media (max-width: 350px) {

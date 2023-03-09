@@ -142,15 +142,16 @@
       <span class="button-text">Получить консультацию</span>
     </button>
   </nav>
-  <header class="single-block  <?= $header_style; ?> <?= $header_style_mobile; ?>">
+  <header class="single-block  <?= $header_style; ?> <?= $header_style_mobile; ?> <?= $header_style_politic_mobile; ?>">
     <div class="container">
       <div class="single-block-contant">
         <div class="seporator"></div>
-        <h1 class="header-title">
+        <h1 class="header-title <?= $header_style_politic_title_mobile; ?>">
           <?php echo $page_title ?>
         </h1>
         <ul class="breadcrumb <?= $blogMore_li_style; ?>">
-          <li><a class="<?= $blogMore_li_style; ?>" href="./index.php">Главная</a>
+          <li>
+            <a class="<?= $blogMore_li_style; ?>" href="./index.php">Главная</a>
           </li>
           <li class="active <?= $blogMore_li_style; ?>">
             <?php echo $page_title ?>

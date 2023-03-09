@@ -146,7 +146,7 @@
     <div class="container">
       <div class="single-block-contant">
         <div class="seporator"></div>
-        <h1 class="header-title">
+        <h1 class="header-title ">
           <?php echo $page_title ?>
         </h1>
 
