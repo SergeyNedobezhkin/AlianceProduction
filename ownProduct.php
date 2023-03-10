@@ -4,6 +4,8 @@ $header_style = "single-block";
 $navbar_mobile = "navbar-mobile";
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
 $header_style_mobile = "header-style-mobile";
+$header_style_contractProduction_mobile = "header-style-contractProduction-mobile";
+
 include_once('./template-parts/header-page.php'); ?>
 
 <section class="trademark trademark-ownProduct">
@@ -14,7 +16,7 @@ include_once('./template-parts/header-page.php'); ?>
       echo '<h2 class="trademark-section-title">' . $block_title . '</h2>';
     }
     ?>
-    <h2 class="section-title-small">собственные марки</h2>
+
     <div class="trademark-cards">
       <div class="trademark-card">
         <svg class="trademark-card-logo">

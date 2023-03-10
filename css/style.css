@@ -743,6 +743,17 @@ body {
   justify-content: flex-end;
   padding: 3.125rem;
 }
+.blog-card-page {
+  display: flex;
+  position: relative;
+  min-height: 25rem;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  justify-content: flex-end;
+  padding: 3.125rem;
+  width: 705px;
+}
 .blog-card-image {
   position: absolute;
   left: 0;
@@ -1485,8 +1496,8 @@ ul.breadcrumb li a.breadcrumb-li-more {
   padding-top: 1.25rem;
 }
 .blog-news {
-  margin-top: 108px;
-  margin-bottom: 256px;
+  margin-top: 6.75rem;
+  margin-bottom: 16rem;
 }
 .blog-slider-news {
   margin-bottom: 30px;
@@ -1956,6 +1967,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .steps-buttons {
     display: flex;
+    justify-content: flex-end;
   }
   .steps-text {
     width: 214px;
@@ -2411,7 +2423,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     padding-right: 0px;
   }
   .container-features-black {
-    margin-left: 4rem;
+    margin-left: 14rem;
   }
 }
 @media (max-width: 992px) {
@@ -3563,6 +3575,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .steps-buttons {
     margin-right: 30px;
+    justify-content: flex-end;
   }
   .cards {
     width: 97%;
@@ -4331,6 +4344,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .steps-buttons {
     margin-top: 17px;
     margin-right: 14px;
+    justify-content: flex-end;
   }
 
   .production .container .seporator {
@@ -4384,6 +4398,13 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-top: 9.5rem;
     margin-left: 2px;
   }
+  .trademark-ownProduct {
+    margin-top: -5.5rem;
+    margin-bottom: -5rem;
+  }
+  .section-title-small {
+    display: none;
+  }
   .trademark-section-title {
     display: none;
     font-family: "Bebas Neue";
@@ -4408,7 +4429,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .trademark-cards {
     margin-top: 5.5rem;
-    width: 97%;
+    width: 100%;
   }
   .trademark-card {
     grid-template-areas: "logo title" "text text";
@@ -4570,6 +4591,10 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .blog {
     margin-top: 13rem;
     padding-left: 1px;
+  }
+  .blog-news {
+    margin-top: 20px;
+    margin-bottom: 256px;
   }
   .blog-section-title {
     margin-bottom: 5.3rem;
@@ -5276,10 +5301,16 @@ ul.breadcrumb li a.breadcrumb-li-more {
     font-size: 14px;
     line-height: 158%;
   }
+  .header-style-contractProduction-mobile {
+    height: 46.0625rem;
+  }
   .politic-wrapper {
     margin-top: 4rem;
     width: 58rem;
     margin-bottom: 16.375rem;
+  }
+  .blog-slider-news {
+    margin-bottom: -159px;
   }
 }
 @media (max-width: 350px) {

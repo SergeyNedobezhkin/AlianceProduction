@@ -4,6 +4,7 @@ $header_style_mobile = "header-style-mobile";
 $page_title = 'Контрактное производство';
 $header_style = "single-block";
 $navbar_mobile = "navbar-mobile";
+// $header_style_contractProduction_mobile = "header-style-contractProduction-mobile";
 include_once('./template-parts/header-page.php');
 include_once('./template-parts/production-block.php'); ?>
 <div class="section seo">

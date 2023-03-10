@@ -112,6 +112,27 @@ const swiperBlog = new Swiper(".blog-slider", {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
   },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  //   renderBullet: function (index, className) {
+  //     return (
+  //       ' <div class="box ' +
+  //       className +
+  //       '"> <div class="swiper-pagination-number">' +
+  //       (index < 10 ? +(index + 1) : index + 1) +
+  //       "</div> </div>"
+  //     );
+  //   },
+  // },
+});
+
+const swiperBlogPage = new Swiper(".blog-slider-page", {
+  slidesPerView: 1,
+  speed: 400,
+  spaceBetween: 30,
+  loop: true,
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -125,10 +146,31 @@ const swiperBlog = new Swiper(".blog-slider", {
       );
     },
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    992: {
+      slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 1,
+    },
+  },
 });
 
 modalButtons.forEach((button) => {
   // клик по переключателю
+
   button.addEventListener("click", (e) => {
     e.preventDefault();
     // определяем текущее открытое окно
@@ -155,6 +197,7 @@ document.addEventListener("keyup", (e) => {
 
 const forms = document.querySelectorAll("form"); // Собираем все формы
 forms.forEach((form) => {
+  let selector = document.querySelector("input[type='tel']");
   const validation = new JustValidate(form, {
     errorFieldCssClass: "is-invalid",
   });
@@ -176,6 +219,7 @@ forms.forEach((form) => {
         errorMessage: "Укажите телефон!",
       },
     ])
+
     .onSuccess((e) => {
       const thisForm = e.target;
       const formData = new FormData(thisForm); //данные из нашей формы

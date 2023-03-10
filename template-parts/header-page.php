@@ -142,7 +142,8 @@
       <span class="button-text">Получить консультацию</span>
     </button>
   </nav>
-  <header class="single-block  <?= $header_style; ?> <?= $header_style_mobile; ?> <?= $header_style_politic_mobile; ?>">
+  <header class="single-block  <?= $header_style; ?> <?= $header_style_mobile; ?> <?= $header_style_politic_mobile; ?> 
+    <?= $header_style_contractProduction_mobile; ?> ">
     <div class="container">
       <div class="single-block-contant">
         <div class="seporator"></div>

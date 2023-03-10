@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       if (e.data && /\D/g.test(e.data)) {
         input.value = inputNumbersValue;
       }
+
       return;
     }
 
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       if (inputNumbersValue.length >= 5) {
         formatedInputValue += ")" + inputNumbersValue.substring(4, 7);
       }
+
       if (inputNumbersValue.length >= 8) {
         formatedInputValue += "-" + inputNumbersValue.substring(7, 9);
       }
@@ -59,6 +61,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   let onPhonePaste = function (e) {
     let input = e.target;
+
     let pasted = e.clipboardData || window.clipboardData;
     let inputNumbersValue = getInputNumberValue(input);
     if (pasted) {
@@ -71,6 +74,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   for (let i = 0; i < phoneInputs.length; i++) {
     let input = phoneInputs[i];
+
     input.addEventListener("input", onPhoneInput);
     input.addEventListener("keydown", onPhoneKeyDown);
     input.addEventListener("paste", onPhonePaste);
