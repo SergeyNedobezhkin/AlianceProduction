@@ -112,19 +112,6 @@ const swiperBlog = new Swiper(".blog-slider", {
     nextEl: ".blog-button-next",
     prevEl: ".blog-button-prev",
   },
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   clickable: true,
-  //   renderBullet: function (index, className) {
-  //     return (
-  //       ' <div class="box ' +
-  //       className +
-  //       '"> <div class="swiper-pagination-number">' +
-  //       (index < 10 ? +(index + 1) : index + 1) +
-  //       "</div> </div>"
-  //     );
-  //   },
-  // },
 });
 
 const swiperBlogPage = new Swiper(".blog-slider-page", {
@@ -212,11 +199,21 @@ forms.forEach((form) => {
         value: 30,
         errorMessage: "Максимально 30 символов",
       },
+      {
+        rule: "minLength",
+        value: 3,
+        errorMessage: "Минимально 3 символа",
+      },
     ])
     .addField("[name=userphone]", [
       {
         rule: "required",
         errorMessage: "Укажите телефон!",
+      },
+      {
+        rule: "minLength",
+        value: 15,
+        errorMessage: "Номер введен неверно!",
       },
     ])
 

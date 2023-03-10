@@ -18,14 +18,14 @@
       <svg class="header-features-icon" width="36" height="36">
         <use href="./img/sprite.svg#time"></use>
       </svg>
-      <p class="header-features-text header-features-text-black">Непрерывная работа </br>c 2017 года</p>
+      <p class="header-features-text header-features-text-black">Непрерывная работа c 2017 года</p>
     </li>';
     } else {
       echo ' <li class="swiper-slide header-features-item">
           <svg class="header-features-icon" width="36" height="36">
             <use href="./img/sprite.svg#time"></use>
           </svg>
-          <p class="header-features-text">Непрерывная работа </br>c 2017 года</p>
+          <p class="header-features-text">Непрерывная работа c 2017 года</p>
         </li>';
     } ?>
     <?php
@@ -131,4 +131,4 @@
     } ?>
 
   </div>
-  </div>
+</section>
