@@ -163,8 +163,10 @@
     </div>
   </header>
   <?php $block_title = 'собственные торговые марки';
+
   $founder_button_link = "founder-button-link";
   $block_title_production = 'Контрактное производство';
+  $production_contractProduction_main = "production-contractProduction-main";
   $block_title_blogMore = 'Блог экспертов в области производства';
   include_once('./template-parts/section-light-block.php');
   include_once('./template-parts/production-block.php');

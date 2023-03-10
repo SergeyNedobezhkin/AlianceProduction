@@ -1,10 +1,12 @@
 <?php
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
 $header_style_mobile = "header-style-mobile";
+$production_contractProduction = "production-contractProduction";
+
 $page_title = 'Контрактное производство';
 $header_style = "single-block";
 $navbar_mobile = "navbar-mobile";
-// $header_style_contractProduction_mobile = "header-style-contractProduction-mobile";
+$header_style_contractProduction_mobile = "header-style-contractProduction-mobile";
 include_once('./template-parts/header-page.php');
 include_once('./template-parts/production-block.php'); ?>
 <div class="section seo">

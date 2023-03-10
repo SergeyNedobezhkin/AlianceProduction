@@ -53,7 +53,7 @@ $types_him_mobile_block_item = "types-him-block-mobile-item";
 $types_him_mobile_block_text = "types-him-block-mobile-text";
 
 
-$clients_avtohim_mobile_block = "clients-avtohim-mobile-block";
+
 
 //блок слайдера "Исследовательский центр"
 $block_slider_arrow_internalPage = "block-slider-arrow-internalPage";
@@ -86,7 +86,7 @@ include_once('./template-parts/section-light-block.php'); ?>
 
 
 
-<section class=" clients <?= $clients_avtohim_mobile_block; ?>">
+<section class=" clients clients-avtohim-block-client clients-avtohim-block-client-mobile">
   <div class="container clients-container">
     <div class="clients-wrapper">
       <div class="clients-contant ">

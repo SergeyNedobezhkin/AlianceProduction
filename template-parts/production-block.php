@@ -1,4 +1,5 @@
-<section class="section production ">
+<section
+  class="section production  <?= $production_contractProduction; ?>  <?= $production_contractProduction_main; ?> ">
   <div class="container">
     <?php
     if (!empty($block_title_production)) {

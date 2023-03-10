@@ -1,7 +1,7 @@
 <section class="section clients">
   <div class="container clients-container">
     <div class="clients-wrapper">
-      <div class="clients-contant ">
+      <div class="clients-contant  ">
         <div class="seporator clients-seporator"></div>
         <h2 class="section-title clients-title">Производим аэрозольную продукцию для разных сфер</h2>
         <ul class="clients-list">
