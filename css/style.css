@@ -1159,7 +1159,7 @@ body {
   background-color: #fff;
   margin: auto;
   margin-top: 9.3%;
-  margin-right: 38.3%;
+  margin-right: 37.3%;
   max-width: 28.75rem;
   padding-top: 2.2rem;
   padding-bottom: 2.5rem;
@@ -1173,8 +1173,8 @@ body {
   background-color: #fff;
   margin: auto;
 
-  margin-top: 7.3%;
-  margin-right: 38.3%;
+  margin-top: 9.3%;
+  margin-right: 37.3%;
   max-width: 28.75rem;
   padding-top: 2.2rem;
   padding-bottom: 2.5rem;
@@ -5088,10 +5088,10 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .modal-dialog {
     background-color: #fff;
-    margin-top: 7%;
-    margin-left: -24px;
-    margin-right: 20px;
-    max-width: 102%;
+    margin-top: 33%;
+    margin-left: 15px;
+    margin-right: 16px;
+    max-width: 92%;
     height: 568px;
     padding-top: 2.2rem;
     padding-bottom: 2.5rem;
@@ -5131,7 +5131,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     font-family: "Noto Sans";
     font-style: normal;
     font-weight: 400;
-    max-width: 97%;
+    max-width: 96%;
     font-size: 2.33rem;
     padding-left: 10px;
     line-height: 161%;
@@ -5529,6 +5529,20 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .clients-avtohim-block-client-mobile {
     margin-top: 16.6rem;
     margin-bottom: 95px;
+  }
+  .modal-dialog.modal-answer {
+    background-color: #fff;
+    margin: auto;
+    margin-top: 32.3%;
+    margin-right: 4.3%;
+    max-width: 57.75rem;
+    padding-top: 2.2rem;
+    padding-bottom: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    position: relative;
+    transform: translateY(-10%);
+    transition: transform 0.3s;
   }
 }
 @media (max-width: 350px) {
