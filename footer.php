@@ -170,7 +170,7 @@
     <p class="modal-text modal-text-answer">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие
       вопросы и поможем даже в самых сложных случаях!</p>
     <div class="modal-form-footer modal-form-footer-answer">
-      <button onclick="window.location.href = 'http://alianceproduction/'" type="submit"
+      <button onclick="window.location.href = 'https://nedobezhkin-sergey.ru/'" type="submit"
         class="button modal-form-button modal-form-button-answer" data-toggle="modal">Вернуться на главную</button>
     </div>
   </div>
