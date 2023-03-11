@@ -2,6 +2,7 @@
 $page_title = 'Блог';
 $header_style = "single-block";
 $navbar_mobile = "navbar-mobile";
+$header_style_blog_mobile = "header-style-blog-mobile";
 $header_style_mobile = "header-style-mobile";
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
 include_once('./template-parts/header-page.php'); ?>

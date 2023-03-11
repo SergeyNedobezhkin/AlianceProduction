@@ -4270,6 +4270,9 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .footer-policy:hover {
     color: #828a99;
   }
+  .container-features-black {
+    margin-left: 1rem;
+  }
 }
 @media (max-width: 480px) {
   html {
@@ -4755,6 +4758,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     margin-top: 20px;
     margin-bottom: 256px;
   }
+
   .blog-section-title {
     margin-bottom: 5.3rem;
     letter-spacing: 0.29px;
@@ -4813,6 +4817,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
 
   .cta {
     margin-top: 21rem;
+    /* width: 80rem; */
   }
   .section-cta {
     position: relative;
@@ -4897,9 +4902,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     font-weight: 400;
     font-size: 2rem;
   }
-  /* .footer {
-    margin-left: -17px;
-  } */
+
   .footer-top {
     padding-top: 3.325rem;
     padding-bottom: 2.7rem;
@@ -5357,7 +5360,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
     color: #5c8ee6;
     margin-top: 24px;
   }
-  /*  Мобильная версия Автомобильная химия*/
+
   .single-block-him {
     display: block;
   }
@@ -5368,13 +5371,14 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .header-style-mobile-avtohim {
     height: 51.5625rem;
     margin-top: 67px;
+    width: 62rem;
   }
   .founder-production-mobile-avtohim {
     padding-top: 0px;
     margin-top: -19px;
   }
   .founder-production-avtohim-mobile-photo {
-    width: 57.5625rem;
+    width: 97%;
     height: 71.875rem;
     margin-bottom: 16px;
   }
@@ -5385,7 +5389,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   .container-features-mobile-black {
     padding-top: 0px;
     margin-top: -216px;
-    margin-left: 16px;
+    margin-left: 0px;
   }
   .header-features-mobile-text-black {
     padding-bottom: 20px;
@@ -5395,7 +5399,7 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .manufacture-avtohim-mobile-block-photo {
     position: absolute;
-    width: 62.4375rem;
+    width: 100%;
     height: 49.4375rem;
     left: 0px;
     top: 2738px;
@@ -5546,6 +5550,21 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
 }
 @media (max-width: 350px) {
+  .single-block {
+    width: 61rem;
+  }
+  .header-style-mobile {
+    height: 36.5625rem;
+    left: 0px;
+    margin-top: 11.1rem;
+    width: 80rem;
+  }
+  .blog-news {
+    margin-top: 20px;
+    margin-bottom: 256px;
+    margin-left: 20px;
+    width: 74rem;
+  }
   .header-button {
     padding: 3.3rem 14rem;
     font-size: 10.7px;
@@ -5599,5 +5618,21 @@ ul.breadcrumb li a.breadcrumb-li-more {
   }
   .footer-policy:hover {
     color: #828a99;
+  }
+  .manufacture-avtohim-mobile-block-photo {
+    position: absolute;
+    width: 59.4375rem;
+    height: 49.4375rem;
+    left: 0px;
+    top: 2853px;
+  }
+  .section-cta {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 8.25rem;
+    width: 80rem;
+  }
+  .header-style-contractProduction-mobile {
+    height: 46.0625rem;
   }
 }
