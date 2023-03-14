@@ -43,14 +43,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
       if (inputNumbersValue.length >= 10) {
         formatedInputValue += "-" + inputNumbersValue.substring(9, 11);
       }
-    }
-    // else {
-    //Номер не из РФ.
-    // formatedInputValue = input.value =
-    //   "+" + inputNumbersValue.substring(0, 16);
-    // }
-    input.value = formatedInputValue;
-  };
+    } else {
+      // Номер не из РФ.
+  //     formatedInputValue = input.value =
+  //       "+" + inputNumbersValue.substring(0, 16);
+  //   }
+  //   input.value = formatedInputValue;
+  // };
 
   let onPhoneKeyDown = function (e) {
     let input = e.target;

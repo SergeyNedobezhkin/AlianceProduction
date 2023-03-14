@@ -135,7 +135,7 @@
           <label class="input-group-label " for="modal-user-name">Имя</label>
         </div>
         <div class="input-group modal-input-group">
-          <input id="modal-user-phone" class="input input-phone modal-input" name="userphone" type="tel" maxlength="18"
+          <input id="modal-user-phone" class="input input-phone  modal-input" name="userphone" type="tel" maxlength="18"
             placeholder=" ">
           <label class="input-group-label " for="modal-user-phone">Номер телефона</label>
         </div>
