@@ -690,9 +690,6 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
   overflow: hidden;
 }
-/* .steps-item{
-      padding-right: 57px;
-} */
 
 @media (max-width: 1700px) {
   .page-blog-slider-footer {

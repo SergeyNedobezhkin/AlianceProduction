@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <script src="./js/main.js" defer></script>
+  <script src="./js/blog-slider.js" defer></script>
+  <script src="./js/features-slider.js" defer></script>
+  <script src="./js/step-slider.js" defer></script>
+  <script src="./js/blog-slider-page.js" defer></script>
   <script src="./js/swiper-bundle.min.js"></script>
   <script src="./js/just-validate.production.min.js"></script>
   <script src="./js/phoneInput.js" defer></script>
