@@ -1,3 +1,4 @@
+import Swiper from "./js/swiper-bundle.min.js";
 const swiper = new Swiper(".features-slider", {
   speed: 400,
   slidesPerView: 5,

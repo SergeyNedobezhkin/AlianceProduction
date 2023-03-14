@@ -43,41 +43,39 @@ document.addEventListener("DOMContentLoaded", (e) => {
       if (inputNumbersValue.length >= 10) {
         formatedInputValue += "-" + inputNumbersValue.substring(9, 11);
       }
+    } else {
+      // Номер не из РФ.
+      formatedInputValue = input.value =
+        "+" + inputNumbersValue.substring(0, 16);
     }
-    // else {
-    // Номер не из РФ.
-    //     formatedInputValue = input.value =
-    //       "+" + inputNumbersValue.substring(0, 16);
-    //   }
-    //   input.value = formatedInputValue;
-    // };
+    input.value = formatedInputValue;
+  };
 
-    let onPhoneKeyDown = function (e) {
-      let input = e.target;
-      if (e.keyCode === 8 && getInputNumberValue(input).length === 1) {
-        input.value = "";
-      }
-    };
-
-    let onPhonePaste = function (e) {
-      let input = e.target;
-
-      let pasted = e.clipboardData || window.clipboardData;
-      let inputNumbersValue = getInputNumberValue(input);
-      if (pasted) {
-        let pastedText = pasted.getData("Text");
-        if (/\D/g.test(pastedText)) {
-          input.value = inputNumbersValue;
-        }
-      }
-    };
-
-    for (let i = 0; i < phoneInputs.length; i++) {
-      let input = phoneInputs[i];
-
-      input.addEventListener("input", onPhoneInput);
-      input.addEventListener("keydown", onPhoneKeyDown);
-      input.addEventListener("paste", onPhonePaste);
+  let onPhoneKeyDown = function (e) {
+    let input = e.target;
+    if (e.keyCode === 8 && getInputNumberValue(input).length === 1) {
+      input.value = "";
     }
   };
+
+  let onPhonePaste = function (e) {
+    let input = e.target;
+
+    let pasted = e.clipboardData || window.clipboardData;
+    let inputNumbersValue = getInputNumberValue(input);
+    if (pasted) {
+      let pastedText = pasted.getData("Text");
+      if (/\D/g.test(pastedText)) {
+        input.value = inputNumbersValue;
+      }
+    }
+  };
+
+  for (let i = 0; i < phoneInputs.length; i++) {
+    let input = phoneInputs[i];
+
+    input.addEventListener("input", onPhoneInput);
+    input.addEventListener("keydown", onPhoneKeyDown);
+    input.addEventListener("paste", onPhonePaste);
+  }
 });
