@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <script src="./js/main.js" defer></script>
+  <script src="./js/on-Off-whiteMenu.js" defer></script>
   <script src="./js/blog-slider.js" defer></script>
   <script src="./js/features-slider.js" defer></script>
   <script src="./js/step-slider.js" defer></script>
