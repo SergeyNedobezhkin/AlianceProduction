@@ -1,5 +1,6 @@
 <script src="./js/phoneInput.js" defer></script>
 <script src="./js/just-validate.production.min.js "></script>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-top">

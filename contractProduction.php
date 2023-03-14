@@ -6,6 +6,7 @@
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
 <script src="./js/favicon.js"></script>
+
 <?php
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
 $header_style_mobile = "header-style-mobile";

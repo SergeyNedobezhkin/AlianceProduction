@@ -6,6 +6,7 @@
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
 <script src="./js/favicon.js"></script>
+
 <?php
 $page_title = 'Политика конфиденциальности';
 $header_style = "single-block";

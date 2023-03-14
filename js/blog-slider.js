@@ -1,4 +1,3 @@
-import Swiper from "./js/swiper-bundle.min.js";
 const swiperBlog = new Swiper(".blog-slider", {
   slidesPerView: 1,
   speed: 400,

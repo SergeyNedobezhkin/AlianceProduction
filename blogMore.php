@@ -5,6 +5,7 @@
 <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
+
 <script src="./js/favicon.js"></script>
 <?php
 $mobile_style_menu_toggle = "mobile-style-menu-toggle";
